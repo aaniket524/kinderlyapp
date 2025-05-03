@@ -1,0 +1,250 @@
+.team-main{
+    padding: 100px 50px;
+    background-color:   #53945e1e;
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center 
+}
+.team-subheading{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color:   #53945e;
+}
+.team-heading{
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #002B51;
+}
+.team-heading::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* adjust size as needed */
+    height: 50px; /* adjust size as needed */
+    margin-left: -10px;
+    top: -50px;
+    rotate: 120deg;
+    vertical-align: top;
+  }
+.team-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-inline-start: 19%;
+    padding-inline-end: 19%;
+    font-weight: normal;
+    text-align: center;
+    color:  rgb(0, 43, 81);
+}
+
+.team-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.team-cards{
+    background-color: white;
+    width: 45%;
+    padding: 20px 20px;
+    margin-top: 0px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+.team-imagepart{
+    width: 30%;
+}
+.team-contentpart{
+    width: 70%;
+}
+.team-subtitle{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: initial;
+    font-weight:600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #002B51;
+}
+.team-image{
+    width: 100%;
+    border-radius: 20px;
+}
+.team-title{
+    
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: initial;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 20px;
+ 
+    color: #002B51;
+    
+}
+.team-desc{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.4;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: initial;
+    color:  rgb(0, 43, 81);
+}
+
+
+@media screen and (max-width: 1270px) {
+    .team-main{
+        padding: 100px 40px;}
+        .team-card-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap:20px;
+            width: 100%;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        
+}
+@media screen and (min-width: 800px) and (max-width: 1100px){
+    .team-main{
+        padding: 100px 40px;}
+    .team-heading{
+        font-size: 40px;
+    }
+    .team-card-container{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap:20px;
+        width: 100%;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .team-cards{
+        width: 70%;
+    }
+}
+@media screen  and (min-width: 600px) and (max-width: 800px){
+    .team-main{
+        padding: 100px 30px;}
+    .team-heading{
+        font-size: 40px;
+    }
+    .team-card-container{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap:20px;
+        width: 100%;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .team-cards{
+        width: 90%;
+    }
+    .team-para{
+        padding-inline-start: 10%;
+        padding-inline-end: 10%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .team-main{
+        padding: 80px 20px;}
+    .team-heading{
+        font-size: 35px;
+    }
+    .team-card-container{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap:20px;
+        width: 100%;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .team-cards{
+        width: 100%;
+    }
+    .team-cards{
+        background-color: white;
+        width: 100%;
+        padding: 20px 20px;
+        margin-top: 0px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+  
+    .team-contentpart{
+        width: 100%;
+    }
+    .team-title{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .team-subtitle{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .team-desc{
+        text-align: center;
+        margin-top:10px;
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .team-imagepart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    .team-image{
+        width: 100%;
+    }
+    .team-para{
+        padding-inline-start: 0%;
+        padding-inline-end: 0%;
+    }
+}
+
+

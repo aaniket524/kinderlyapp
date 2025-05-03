@@ -1,0 +1,61 @@
+.allpageheader-main {
+    background-image: url('https://wgl-dsites.net/littledino/wp-content/uploads/2019/08/page_title_bg.png');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+    position: relative;
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center;
+    background-color: transparent;
+    height: 348px;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-top: 12px;
+    position: relative;
+    padding-bottom: 60px;
+    z-index: -1;
+  }
+  
+  .allpageheader-title {
+    z-index: 2;
+    position: relative;
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    position: relative;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    color:#002B51;
+    margin-top: 180px;
+  }
+  
+
+  .allpageheader-title::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/BYfgg/MAGNzpBYfgg/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* adjust size as needed */
+    height: 50px; /* adjust size as needed */
+    margin-left: 10px;
+    top: -50px;
+    rotate: 0deg;
+    vertical-align: top;
+  }
+  .allpageheader-title::before {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/o7yc8/MAFGrso7yc8/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* adjust size as needed */
+    height: 50px; /* adjust size as needed */
+    margin-left: -30px;
+    top: -50px;
+    transform: skew(-1);
+    vertical-align: top;
+  }

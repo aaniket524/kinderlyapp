@@ -1,0 +1,131 @@
+.counts-main{
+    padding: 50px 50px;
+    background-color: #ff6f9115;
+}
+.aboutgrid-container2{
+    max-width: 1420px;
+    width: 100%;
+    overflow: hidden;
+    justify-self: center ;
+    margin: 0;
+    /* background-color: #ffc40027; */
+    padding: 100px 0px;
+    /* border-radius: 30px; */
+    
+}
+.aboutcounter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+.about-numbers{
+    width: 24%;
+}
+.aboutgrid-number{
+    font-family: "Fredoka", sans-serif;
+    font-size: 95px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: #002B51;
+}
+.aboutgrid-details{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: center;
+    color:  rgb(0, 43, 81);
+}
+
+@media screen and (max-width: 1270px) {
+    .counts-main{
+        padding: 0px 40px;
+        margin: 50px 0px;
+    }
+    .aboutgrid-number{
+        font-size: 75px;
+    }
+    .aboutgrid-container2{
+        padding: 100px 0px;
+    }
+}
+@media screen and (min-width: 850px) and (max-width: 1000px){
+    .counts-main{
+        padding: 0px 40px;
+        margin: 50px 0px;
+    }
+    .aboutgrid-number{
+        font-size: 65px;
+    }
+    .aboutgrid-container2{
+        padding: 100px 0px;
+    }
+    
+.aboutcounter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+.about-numbers{
+    width: 23%;
+}
+}
+@media screen  and (min-width: 500px) and (max-width: 850px){
+    .counts-main{
+        padding: 0px 30px;
+        margin: 50px 0px;
+    }
+    .aboutgrid-number{
+        font-size: 55px;
+    }
+    .aboutgrid-container2{
+        padding: 100px 0px;
+    }
+    
+.aboutcounter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* IMPORTANT */
+
+    align-content: center;
+    gap: 0px;
+}
+.about-numbers{
+    width: 45% !important;
+}
+}
+@media screen and (max-width: 500px) {
+    .counts-main{
+        padding: 0px 20px;
+        margin: 50px 0px;
+    }
+    .aboutgrid-number{
+        font-size: 45px;
+    }
+    .aboutgrid-container2{
+        padding: 100px 0px;
+    }
+    
+.aboutcounter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* IMPORTANT */
+
+    align-content: center;
+    gap: 30px;
+}
+.about-numbers{
+    width: 100% !important;
+}
+
+}

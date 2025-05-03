@@ -1,0 +1,487 @@
+.steps-main{
+    padding: 130px 50px 100px 50px;
+    position: relative;
+    padding-bottom: 100px;
+    background-color: #b8dfec33;
+    max-width: 1420px;    
+    overflow: hidden;
+    justify-self: center; 
+}
+.steps-main::before{
+    background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png
+    );
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;  /* set width explicitly */
+ height: 100%; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;    
+    opacity: 0.9;
+    pointer-events: none; 
+} 
+.inner-steps::before{
+    background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;  /* set width explicitly */
+    height: 100%; /* set height explicitly */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;     /* adjust based on other content */
+    opacity: 1;
+    pointer-events: none; 
+}
+.steps-main::after {
+    content: '';
+    position: absolute;
+    top: 350px;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    background: 
+        url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/mask.png') no-repeat left center;
+    background-size: 150px, 20px;
+    background-position: left center, left top 10px;
+    z-index: 1;
+    opacity: .9;
+}
+.steps-box:nth-of-type(2)::before {
+    content: '';
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    width: 50px;
+    height: 100px;
+    background: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png') no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .steps-box:nth-of-type(3)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    background: url('https://media-public.canva.com/BYfgg/MAGNzpBYfgg/1/t.png') no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+  
+  .steps-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 120px;
+    height: 120px;
+    background: url('https://media-public.canva.com/bB__U/MAE8XEbB__U/1/t.png') no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+  
+  
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .float-down {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+  
+.steps-main::before{
+    content: '';
+    position: absolute;
+    top:100px;
+    right: -40px !important;
+    width: 150px; 
+    height: 100%; 
+    background-size: contain; 
+    background-repeat: no-repeat !important;
+    background-position: center;
+    z-index: 1; 
+    transform:  scaleX(-1); 
+    /* Flip horizontally */
+        opacity: .9;   
+    overflow: hidden !important;
+    background:url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/left.png)
+     /* url(http://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/shape-2.png) */
+    
+}
+.steps-subheading{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color:   #ffa600;
+}
+.steps-heading::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* adjust size as needed */
+    height: 50px; /* adjust size as needed */
+    margin-left: -10px;
+    top: -50px;
+    rotate: 120deg;
+    vertical-align: top;
+  }
+.steps-heading{
+    position: relative;
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-inline-start: 19%;
+    padding-inline-end: 19%;
+    color: #002B51;
+}
+.steps-container{
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+}
+.steps-box{
+    width: 98%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.steps-count-main {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.steps-count {
+    position: relative;
+    z-index: 1;
+}
+.steps-count-main::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+.steps-box:nth-of-type(1) .steps-count-main::before {
+    background-color: #d17d9275;
+}
+.steps-box:nth-of-type(1) .steps-count-main:hover::before,
+.steps-box:nth-of-type(2) .steps-count-main:hover::before,
+.steps-box:nth-of-type(3) .steps-count-main:hover::before {
+    animation: blobRotate 3s linear infinite;
+}
+@keyframes blobRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* .steps-box:nth-of-type(1) .steps-count-main {
+    background-color: #FFC0CB; 
+    
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+.steps-box:nth-of-type(2) .steps-count-main {
+    background-color: #90EE90; 
+    border-radius: 55% 45% 60% 50% / 60% 50% 50% 40%;
+
+} */
+.steps-box:nth-of-type(2) .steps-count-main::before {
+    background-color: #90EE90;
+    border-radius: 55% 45% 60% 50% / 60% 50% 50% 40%;
+}
+
+.steps-box:nth-of-type(3) .steps-count-main {
+    background-color: #ADD8E6;
+    border-radius: 50% 90% 50% 70% / 60% 50% 90% 50%;
+
+}
+.steps-count{
+    
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+  
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: 700;
+    margin-top: 10px;
+ 
+    color: #002B51;
+}
+.steps-title{
+    font-family: "Fredoka", sans-serif;
+    font-size: 30px;
+
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 20px;
+ 
+    color: #002B51;
+}
+.steps-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.4;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: center;
+    color:  rgb(0, 43, 81);
+}
+
+@media screen and (max-width: 1270px) {
+    .steps-main{
+        padding: 130px 40px 100px 40px;}
+    .steps-heading{
+        font-size: 40px;
+    }
+    .steps-title{
+        font-size: 25px;
+    }
+    .steps-container{
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    .steps-main{
+        padding: 130px 30px 100px 30px;}
+    .steps-heading{
+        font-size: 40px;
+    }
+    .steps-title{
+        font-size: 25px;
+    }
+    .steps-container{
+        gap: 20px;
+    }
+}
+@media screen  and (min-width: 500px) and (max-width: 800px){
+    .steps-main{
+        padding: 130px 30px 100px 30px;}
+    .steps-heading{
+        font-size: 35px;
+        padding-inline-start: 10%;
+        padding-inline-end: 10%;
+    }
+    .steps-title{
+        font-size: 22px;
+    }
+    .steps-container{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .steps-para{
+        padding-inline-start: 10%;
+        padding-inline-end: 10%;
+    }
+    .steps-main::before{
+        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png
+        );
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;  /* set width explicitly */
+     height: 100%; 
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;    
+        opacity: 0.9;
+        pointer-events: none; 
+    } 
+    .inner-steps::before{
+        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;  /* set width explicitly */
+        height: 100%; /* set height explicitly */
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;     /* adjust based on other content */
+        opacity: 1;
+        pointer-events: none; 
+    }
+    .steps-main::after {
+        content: '';
+        position: absolute;
+        top: 300px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: 
+            url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/mask.png') no-repeat left center;
+        background-size: 100px, 20px;
+        background-position: left center, left top 10px;
+        z-index: 1;
+        opacity: .5;
+    }
+    .steps-box:nth-of-type(2)::before {
+        content: '';
+        position: absolute;
+        left: 240px;
+        top: 110px;
+        width: 40px;
+        height:40px;
+        background: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png') no-repeat;
+        background-size: contain;
+        z-index: -1;
+      }
+      .steps-box:nth-of-type(3)::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        background: url('https://media-public.canva.com/BYfgg/MAGNzpBYfgg/1/t.png') no-repeat;
+        background-size: contain;
+        z-index: -1;
+      }
+      .steps-container::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 200px;
+        width: 40px;
+        height: 40px;
+        background: url('https://media-public.canva.com/bB__U/MAE8XEbB__U/1/t.png') no-repeat;
+        background-size: contain;
+        z-index: 0;
+      }
+}
+@media screen and (max-width: 500px) {
+    .steps-main{
+        padding: 130px 30px 100px 30px;}
+    .steps-heading{
+        font-size: 35px;
+        padding-inline-start: 0%;
+        padding-inline-end: 0%;
+    }
+    .steps-title{
+        font-size: 22px;
+    }
+    .steps-container{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .steps-para{
+        padding-inline-start: 0%;
+        padding-inline-end: 0%;
+    }
+    .steps-main::before{
+        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png
+        );
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;  /* set width explicitly */
+     height: 100%; 
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;    
+        opacity: 0.9;
+        pointer-events: none; 
+    } 
+    .inner-steps::before{
+        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;  /* set width explicitly */
+        height: 100%; /* set height explicitly */
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;     /* adjust based on other content */
+        opacity: 1;
+        pointer-events: none; 
+    }
+    .steps-main::after {
+        content: '';
+        position: absolute;
+        top: 300px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: 
+            url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/mask.png') no-repeat left center;
+        background-size: 100px, 20px;
+        background-position: left center, left top 10px;
+        z-index: 1;
+        opacity: .5;
+    }
+    .steps-box:nth-of-type(2)::before {
+        content: '';
+        position: absolute;
+        left: 240px;
+        top: 110px;
+        width: 40px;
+        height:40px;
+        background: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png') no-repeat;
+        background-size: contain;
+        z-index: -1;
+      }
+      .steps-box:nth-of-type(3)::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        background: url('https://media-public.canva.com/BYfgg/MAGNzpBYfgg/1/t.png') no-repeat;
+        background-size: contain;
+        z-index: -1;
+      }
+      .steps-container::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 200px;
+        width: 40px;
+        height: 40px;
+        background: url('https://media-public.canva.com/bB__U/MAE8XEbB__U/1/t.png') no-repeat;
+        background-size: contain;
+        z-index: 0;
+      }
+}

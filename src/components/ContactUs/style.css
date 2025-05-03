@@ -1,0 +1,616 @@
+.contactus-core{
+    padding: 0px 50px 100px 50px;
+}
+.contactus-main{
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center
+}
+.contactus-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    align-content: initial;
+    gap: 50px;
+}
+.contactus, .contactus-form{
+    margin-top: 0px;
+    width: 46%;
+   
+    align-content: initial;
+}
+.contactus{
+    position: relative;
+    z-index: 2;
+}
+.contactus-icons svg{
+    width: 60px;
+    height: 60px;
+}
+.contactus-detailing{
+    display: flex;
+
+    justify-content:initial;
+    align-items: initial;
+    margin-top: 30px;
+    align-content: initial;
+    max-width: 100%;
+    gap: 0px;
+}
+.contactus-icons{
+border-right: 1px solid #002B51;
+width: 12%;
+margin-bottom: 20px !important;
+}
+.any-question{
+    position: relative;
+    width: 100%;
+    /* height: 70%; */
+    margin-top: -100px;
+    margin-left: -20px;
+    margin-bottom: -30px;
+    z-index: 1;
+}
+.contactus-find-main{
+    display: flex;
+   margin-bottom: 120px;
+   margin-top: 00px;
+    justify-content: initial;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+
+}
+.contactus-contacts {
+    width: 88%;
+    
+ 
+
+}
+.contactus-googlemap{
+    width: 49%;
+}
+.contactus-details{
+    padding-left: 20px;
+    width: 60%;
+  
+  
+}
+.contactus-title{
+    position: relative;
+    z-index: 2;
+    font-family: "Fredoka", sans-serif;
+    font-size: 50px;
+    /* text-transform: capitalize; */
+    text-align: initial;
+    margin-bottom: 0px;
+    padding-inline-end: 10%;
+    margin-top: 0px;
+    color: #002B51;
+}
+.contactus-detail-title{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    /* text-transform: capitalize; */
+    text-align: initial;
+    margin-bottom: 0px;
+    padding-inline-end: 0%;
+    margin-top: 0px;
+    color: #002B51;
+}
+.contactus-titles{
+    font-family: "Fredoka", sans-serif;
+    font-size: 50px;
+    /* text-transform: capitalize; */
+    text-align: initial;
+    margin-bottom: 50px;
+    padding-inline-end: 0%;
+    margin-top: 30px;
+    color: #002B51;
+}
+.contactus-title::after, .contactus-titles::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px; /* adjust size as needed */
+    height: 60px; /* adjust size as needed */
+    margin-left: -10px;
+    top: -50px;
+    rotate: 120deg;
+    vertical-align: top;
+  }
+
+.contactus-button{
+    background-color: #FFD4CA; /* Cheerful pink */
+    color: #002B51; /* Deep navy text for contrast */
+    border: none;
+    position: relative;
+    z-index: 2;
+    border-radius: 50px; /* More rounded pill shape */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px; /* Slightly bigger for a more friendly feel */
+    box-shadow: 0 10px 25px rgba(255, 111, 145, 0.3), 0 6px 15px rgba(144, 224, 239, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    
+}
+
+.contactus-button:hover {
+    position: relative;
+    z-index: 2;
+    transform: scale(1.05);
+    color: white;
+    
+    background-color: #FF9A8B; /* Slightly deeper pink on hover */
+    box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239, 0.4);
+}
+.contact-us-title{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 38px;
+    /* font-weight: normal; */
+    text-align: initial;
+    color:  rgb(0, 43, 81);
+    position: relative;
+    z-index: 2;
+}
+.contactus-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: initial;
+    color:  rgb(0, 43, 81);
+}
+.contactus-detail-desc{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top:5px;
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: initial;
+    color:  rgb(0, 43, 81);
+}
+.contactus-form{
+    background: #F8F8F8;
+    border-radius: 20px;
+    padding: 40px;
+}
+.contactus-form-detail input{
+    width: 98%;
+    /* width: 100%; */
+    height: 40px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    text-transform: none;
+    color: #002B51;
+    background: white;
+    padding: 5px 0px 5px 20px;
+    margin-bottom: 20px !important;
+}
+.contactus-form-detail textarea{
+    width: 98%;
+    /* width: 100%; */
+    height: 120px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    text-transform: none;
+    color: #002B51;
+    background: white;
+    padding: 20px 0px 5px 20px;
+    margin-bottom: 20px !important;
+}
+
+.submit-btn{
+    background-color: #FFD4CA; /* Cheerful pink */
+    color: #002B51; /* Deep navy text for contrast */
+    border: none;
+    border-radius: 50px; /* More rounded pill shape */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px; /* Slightly bigger for a more friendly feel */
+    box-shadow: 0 10px 25px rgba(255, 111, 145, 0.3), 0 6px 15px rgba(144, 224, 239, 0.3);
+    transition: all 0.6s ease;
+    cursor: pointer;
+    margin:10px 0px 20px 0px;
+    width: 100%;
+    
+    
+  
+}
+.submit-btn:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: #FF9A8B; /* Slightly deeper pink on hover */
+    box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239, 0.4);
+}
+
+.contactus-googlemap {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px; 
+    border-left: 1px dashed #FF9A8B;
+
+}
+
+/* Ensure the iframe fills the container */
+.contactus-googlemap iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Overlay mask image */
+.contactus-googlemap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://bambino.bold-themes.com/demo-02/wp-content/uploads/sites/3/2022/06/map_cover_2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Let user still interact with the map */
+    opacity: 1; /* Adjust visibility as needed */
+    z-index: 2;
+}
+
+@media screen and (max-width: 1250px) {
+    .contactus-core{
+        padding: 0px 40px 100px 40px;
+    }
+}
+@media screen and (min-width: 850px) and (max-width: 1100px){
+    .contactus-core{
+        padding: 0px 30px 100px 30px;
+    }
+/* Form section */
+    .contactus-container{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    }
+    .contactus, .contactus-form{
+        margin-top: 0px;
+        width: 49%;
+       
+        align-content: center;
+    }
+    .contactus{
+        position: relative;
+        z-index: 2;
+    }
+    .contactus-icons svg{
+        width: 60px;
+        height: 60px;
+    }
+    /* information of location and all */
+    .contactus-detailing{
+        display: flex;
+    
+        justify-content:initial;
+        align-items: initial;
+        margin-top: 30px;
+        align-content: initial;
+        max-width: 100%;
+        gap: 0px;
+    }
+    .contactus-icons{
+    border-right: 1px solid #002B51;
+    width: 12%;
+    /* padding-left: 10px; */
+    padding-right: 20px;
+    margin-bottom: 20px !important;
+    }
+   }
+@media screen  and (min-width: 500px) and (max-width: 850px){
+    .contactus-core{
+        padding: 0px 30px 100px 30px;
+    }
+/* Form section */
+    .contactus-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    }
+    .contactus, .contactus-form{
+        margin-top: 0px;
+        width: 95%;
+       
+        align-content: center;
+    }
+    .contactus, .contactus-form{
+        position: relative !important;
+        z-index: 2 !important;
+    }
+    .contactus-icons svg{
+        width: 60px;
+        height: 60px;
+    }
+    /* information of location and all */
+    .contactus-detailing{
+        display: flex;
+    
+        justify-content:initial;
+        align-items: initial;
+        margin-top: 30px;
+        align-content: initial;
+        max-width: 100%;
+        gap: 0px;
+    }
+    .contactus-icons{
+    border-right: 1px solid #002B51;
+    width: 12%;
+    /* padding-left: 10px; */
+    margin-right: 10px;
+    margin-bottom: 20px !important;
+    }
+    .contactus-find-main{
+        display: flex;
+        flex-direction: column;
+       margin-bottom: 80px;
+       margin-top: 00px;
+        justify-content: initial;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    
+    }
+    .contactus-contacts {
+        width: 100%;
+    }
+    .contactus-googlemap{
+        width: 100%
+    }
+    .contactus-title{
+        position: relative;
+        z-index: 2;
+        font-family: "Fredoka", sans-serif;
+        font-size: 35px;
+        /* text-transform: capitalize; */
+        text-align: initial;
+        margin-bottom: 0px;
+        padding-inline-end: 10%;
+        margin-top: 0px;
+        color: #002B51;
+    }
+    .contactus-detail-title{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 16px;
+        /* text-transform: capitalize; */
+        text-align: initial;
+        margin-bottom: 0px;
+        padding-inline-end: 0%;
+        margin-top: 0px;
+        color: #002B51;
+    }
+    .contactus-titles{
+        font-family: "Fredoka", sans-serif;
+        font-size: 35px;
+        /* text-transform: capitalize; */
+        text-align: initial;
+        margin-bottom: 50px;
+        padding-inline-end: 0%;
+        margin-top: 30px;
+        color: #002B51;
+    }
+    .contactus-title::after, .contactus-titles::after {
+        content: '';
+        display: inline-block;
+        background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px; /* adjust size as needed */
+        height: 50px; /* adjust size as needed */
+        margin-left: 0px;
+        top: -50px;
+        rotate: 120deg;
+        vertical-align: top;
+      }
+      .contact-us-title{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 28px;
+        /* font-weight: normal; */
+        text-align: initial;
+        color:  rgb(0, 43, 81);
+        position: relative;
+        z-index: 2;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contactus-core{
+        padding: 0px 20px 100px 20px;
+    }
+/* Form section */
+    .contactus-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    }
+    .contactus, .contactus-form{
+        margin-top: 0px;
+        width: 95%;
+       
+        align-content: center;
+    }
+    .contactus, .contactus-form{
+        position: relative !important;
+        z-index: 2 !important;
+    }
+    .contactus-icons svg{
+        width: 60px;
+        height: 60px;
+    }
+    /* information of location and all */
+    .contactus-detailing{
+        display: flex;
+    
+        justify-content:initial;
+        align-items: initial;
+        margin-top: 30px;
+        align-content: initial;
+        max-width: 100%;
+        gap: 0px;
+    }
+    .contactus-icons{
+    border-right: 1px solid #002B51;
+    width: 12%;
+    padding-right: 30px;
+    margin-right: 0px;
+    margin-bottom: 20px !important;
+    }
+    .contactus-find-main{
+        display: flex;
+        flex-direction: column;
+       margin-bottom: 60px;
+       margin-top: 00px;
+        justify-content: initial;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    
+    }
+    .contactus-contacts {
+        width: 100%;
+    }
+    .contactus-googlemap{
+        width: 100%
+    }
+    .contactus-title{
+        position: relative;
+        z-index: 2;
+        font-family: "Fredoka", sans-serif;
+        font-size: 35px;
+        /* text-transform: capitalize; */
+        text-align: initial;
+        margin-bottom: 0px;
+        padding-inline-end: 0%;
+        margin-top: 0px;
+        color: #002B51;
+    }
+    .contactus-detail-title{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 16px;
+        /* text-transform: capitalize; */
+        text-align: initial;
+        margin-bottom: 0px;
+        padding-inline-end: 0%;
+        margin-top: 0px;
+        color: #002B51;
+    }
+    .contactus-titles{
+        font-family: "Fredoka", sans-serif;
+        font-size: 35px;
+        /* text-transform: capitalize; */
+        text-align: initial;
+        margin-bottom: 50px;
+        padding-inline-end: 0%;
+        margin-top: 30px;
+        color: #002B51;
+    }
+    .contactus-title::after, .contactus-titles::after {
+        content: '';
+        display: inline-block;
+        background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px; /* adjust size as needed */
+        height: 50px; /* adjust size as needed */
+        margin-left: 0px;
+        top: -50px;
+        rotate: 120deg;
+        vertical-align: top;
+      }
+      .contact-us-title{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 28px;
+        /* font-weight: normal; */
+        text-align: initial;
+        color:  rgb(0, 43, 81);
+        position: relative;
+        z-index: 2;
+    }
+    .any-question{
+        position: relative;
+        width: 100%;
+        /* height: 70%; */
+        padding-top: 30px;
+        margin-top: -100px;
+        margin-left: -20px;
+        margin-bottom: -30px;
+        z-index: 1;
+    }
+    .contactus-form-detail input{
+        width: 93%;
+        /* width: 100%; */
+        height: 40px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    
+        border: none;
+        font-size: 16px;
+        border-radius: 30px;
+        text-transform: none;
+        color: #002B51;
+        background: white;
+        padding: 5px 0px 5px 20px;
+        margin-bottom: 20px !important;
+    }
+    .contactus-form-detail textarea{
+        width: 93%;
+        /* width: 100%; */
+        height: 120px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    
+        border: none;
+        font-size: 16px;
+        border-radius: 30px;
+        text-transform: none;
+        color: #002B51;
+        background: white;
+        padding: 20px 0px 5px 20px;
+        margin-bottom: 20px !important;
+    }
+    .contactus-form{
+        background: #F8F8F8;
+        border-radius: 20px !important;
+        padding: 40px ;
+    }
+}

@@ -1,0 +1,110 @@
+.mission-main{
+    margin: 30px 0px;
+    padding:100px 50px;
+    background: #45b3df10;
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center;
+}
+.missions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.mission .vission{
+    width: 50%;
+}
+.mission{
+    background: #b3ddbab4;
+    border:none;
+    padding: 40px 30px;
+    border-radius:20px;
+}
+.vission{
+    background: #ffd4caa4;
+    border:none;
+    padding: 40px 30px;
+    border-radius:20px;
+}
+.mission-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: initial;
+    color:  rgb(0, 43, 81);
+}
+.mission-title{
+    position: relative;
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    /* text-transform: capitalize; */
+    text-align: initial;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: #002B51;
+}
+
+@media screen and (max-width: 1270px) {
+    .mission-main{
+        margin: 30px 0px;
+        padding:100px 40px;  
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    .mission-main{
+        margin: 30px 0px;
+        padding:100px 40px;  
+    }
+    .mission-title{
+        font-size: 40px;
+    }
+}
+@media screen  and (min-width: 500px) and (max-width: 800px){
+    .mission-main{
+        margin: 30px 0px;
+        padding:100px 30px;  
+    }
+    .missions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .mission-title{
+        font-size: 35px;
+    }
+    
+    .mission .vission{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mission-main{
+        margin: 30px 0px;
+        padding:80px 20px;  
+    }
+    .missions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .mission-title{
+        font-size: 30px;
+    }
+    
+    .mission .vission{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,152 @@
+.gallery-main {
+  padding: 80px 50px 20px 50px;
+  position: relative;
+max-width: 1420px;
+overflow: hidden;
+justify-self: center 
+}
+.gallery-main::after {
+  content: '';
+  position: absolute;
+  top: 250px;
+  right:120px;
+  width: 100px;  /* set width explicitly */
+  height: 40px; /* set height explicitly */
+  background: url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/dot.png') no-repeat center center;
+  background-size: contain;
+  z-index: -1;     /* adjust based on other content */
+  opacity: 0.9;
+  rotate: -20deg;
+  pointer-events: none; /* prevent it from blocking clicks */
+}
+
+.gallery-main::before {
+  content: '';
+  position: absolute;
+  bottom: 80px;
+  right: 150px;
+  width: 200px;  /* set width explicitly */
+  height: 150px; /* set height explicitly */
+  background: url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/mask-2.png') no-repeat center center;
+  background-size: contain;
+  z-index: 1;     /* adjust based on other content */
+  opacity: 0.9;
+  pointer-events: none; /* prevent it from blocking clicks */
+}
+
+.gallery-subtitle{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #b6002a;
+
+ 
+}
+.gallery-title::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/ZR01Q/MAGPqgZR01Q/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px; /* adjust size as needed */
+    height: 40px; /* adjust size as needed */
+    margin-left: 10px;
+    top: -50px;
+    rotate: 20deg;
+    vertical-align: top;
+  }
+.gallery-title{
+  position: relative;
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-inline-start: 19%;
+    padding-inline-end: 19%;
+    /* color:   orange; */
+    color: #002B51;
+
+}
+.gallery-container{
+    margin-top: 50px;
+    column-count: 3; 
+    column-gap: 15px; 
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+  .gallery-item img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px dashed #bb7a46;
+    border-radius: 10px; 
+  }
+  .gallery-item img:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  }
+
+  /* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+  .gallery-main {
+    padding: 80px 40px 20px 40px;
+  }
+
+  .gallery-title {
+    font-size: 35px;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+  }
+
+  .gallery-container {
+    column-count: 2;
+    padding: 15px;
+  }
+
+  .gallery-main::after,
+  .gallery-main::before {
+    display: none; /* optional: hide decorations if overlapping content */
+  }
+}
+
+/* Mobile screens (576px and below) */
+@media (max-width: 576px) {
+  .gallery-main {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .gallery-title {
+    font-size: 30px;
+    padding-inline-start: 0%;
+    padding-inline-end: 0%;
+  }
+
+ 
+
+  .gallery-container {
+    column-count: 1;
+    padding: 10px;
+  }
+
+  .gallery-title::after {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    top: -30px;
+  }
+
+  .gallery-main::after,
+  .gallery-main::before {
+    display: none; /* Hide decorative elements on small screens if needed */
+  }
+  .gallery-container{
+    margin-top: 20px;
+    padding: 0px;}
+
+}

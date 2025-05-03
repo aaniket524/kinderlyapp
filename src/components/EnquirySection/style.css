@@ -1,0 +1,348 @@
+.enquirysection-main{
+    padding: 50px 50px;
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center 
+}
+.enquirysection-container{
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    padding: 20px 50px;  
+    background: #FFF6ED;
+}
+.enquirysection1{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: initial;
+align-content: center;
+  }
+  .enquirysection2{
+    width: 50%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+  .enquiry-image{
+    z-index: 0;
+    width: 100%;
+    margin-bottom: -70px;
+  }
+  
+.enquiry-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: initial;
+    color:  rgb(0, 43, 81);
+}
+.enquiry-button{
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    align-content: initial;
+    margin-top: 10px;
+}
+.enquiry-btn{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 1px solid #FB6F6D;
+    background-color: #FB6F6D;
+    color: white;
+    border-radius: 50px;
+    font-family: "Fredoka", sans-serif;
+box-shadow: 0 10px 25px rgba(255, 111, 145, 0.3), 0 6px 15px rgba(144, 224, 239, 0.3);
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.enquiry-btn:hover{
+  transform: scale(1.05);
+box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239, 0.4);
+
+}
+.enquiy-heading{
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    position: relative;
+    /* text-transform: capitalize; */
+    text-align: initial;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color:#002B51;
+}
+
+
+.enquirysection-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Decorative Image: After Heading */
+  .enquiy-heading::after {
+    content: "";
+    background-image: url("https://media-public.canva.com/6UnBw/MAFyU96UnBw/1/t.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: -60px;
+    top: -20px;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  /* Decorative Heart BG */
+  .enquirysection-container::before {
+    content: "";
+    background-image: url("https://media-public.canva.com/IHF-g/MAE8XJIHF-g/1/t.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: -40px;
+    animation: pulse 6s infinite ease-in-out;
+  }
+  
+  .enquirysection-container::after {
+    content: "";
+    background-image: url("https://media-public.canva.com/Qliy4/MAFvb7Qliy4/1/t.png");
+    background-repeat: no-repeat;
+    background-size: 60px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 10%;
+    left: 20%;
+    opacity: 1;
+    animation: pulse 7s infinite ease-in-out;
+  }
+  
+
+  /* Animation keyframes */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rocket-float {
+    0%, 100% {
+      transform: translateY(0px) rotate(-10deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(10deg);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+@media screen and (max-width: 1270px) {
+  .enquirysection-main{
+    padding: 50px 40px;}
+}
+@media screen and (min-width: 800px) and (max-width: 1000px){
+  .enquirysection-main{
+    padding: 50px 40px;}
+    .enquirysection-container{
+      border-radius: 50px;
+      overflow: hidden;
+      display: flex;
+      padding: 40px 50px;  
+      background: #FFF6ED;
+  }
+  .enquiy-heading{
+    font-size: 40px;
+  }
+  .enquirysection-container::after {
+    content: "";
+    background-image: url("https://media-public.canva.com/Qliy4/MAFvb7Qliy4/1/t.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 4%;
+    left: 80%;
+    opacity: .6;
+    animation: pulse 7s infinite ease-in-out;
+  }
+
+}
+
+@media screen  and (min-width: 500px) and (max-width: 800px){
+  .enquirysection-main{
+    padding: 50px 30px;}
+    .enquirysection-container{
+      border-radius: 50px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 40px 50px;  
+      background: #FFF6ED;
+  }
+  .enquiy-heading{
+    font-size: 35px;
+  }
+  .enquirysection1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    align-content: center;
+      }
+      .enquirysection2{
+        width: 80%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+      .enquiry-image{
+        z-index: 0;
+        width: 100%;
+        margin-bottom: 0px;
+      }
+      
+      .enquirysection-container::before {
+        content: "";
+        background-image: url("https://media-public.canva.com/IHF-g/MAE8XJIHF-g/1/t.png");
+        background-repeat: no-repeat;
+        background-size: 80px;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 10%;
+        left: -40px;
+        animation: pulse 6s infinite ease-in-out;
+      }
+      
+      .enquirysection-container::after {
+        content: "";
+        background-image: url("https://media-public.canva.com/Qliy4/MAFvb7Qliy4/1/t.png");
+        background-repeat: no-repeat;
+        background-size: 50px;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        bottom: 4%;
+        left: 80%;
+        opacity: .6;
+        animation: pulse 7s infinite ease-in-out;
+      }
+      
+      .enquiy-heading::after {
+        content: "";
+        background-image: url("https://media-public.canva.com/6UnBw/MAFyU96UnBw/1/t.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 40px;
+        top: -105px;
+        animation: float 4s ease-in-out infinite;
+      }
+      
+}
+@media screen and (max-width: 500px) {
+  .enquirysection-main{
+    padding: 50px 10px;}
+    .enquirysection-container{
+      border-radius: 50px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 40px 20px;  
+      background: #FFF6ED;
+  }
+  .enquiy-heading{
+    font-size: 35px;
+  }
+  .enquirysection1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    align-content: center;
+      }
+      .enquirysection2{
+        width: 100%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+      .enquiry-image{
+        z-index: 0;
+        
+        width: 100%;
+        margin-bottom: 0px;
+      }
+      .enquirysection-container::before {
+        content: "";
+        background-image: url("https://media-public.canva.com/IHF-g/MAE8XJIHF-g/1/t.png");
+        background-repeat: no-repeat;
+        background-size: 80px;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 10%;
+        left: -40px;
+        animation: pulse 6s infinite ease-in-out;
+      }
+      
+      .enquirysection-container::after {
+        content: "";
+        background-image: url("https://media-public.canva.com/Qliy4/MAFvb7Qliy4/1/t.png");
+        background-repeat: no-repeat;
+        background-size: 50px;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        bottom: 4%;
+        left: 80%;
+        opacity: .6;
+        animation: pulse 7s infinite ease-in-out;
+      }
+      
+      .enquiy-heading::after {
+        content: "";
+        background-image: url("https://media-public.canva.com/6UnBw/MAFyU96UnBw/1/t.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 40px;
+        top: 55px;
+        animation: float 4s ease-in-out infinite;
+      }
+          
+}
+  

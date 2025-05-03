@@ -1,0 +1,242 @@
+.ourclasses-main{
+    padding: 50px;
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center; 
+}
+.ourclasses-subheading{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color:   #FFAF1A;
+}
+.ourclasses-heading{
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    position: relative;
+    color: #002B51;
+}
+.ourclasses-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-inline-start: 19%;
+    padding-inline-end: 19%;
+    font-weight: normal;
+    text-align: center;
+    color:  rgb(0, 43, 81);
+}
+.ourclasses-heading::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* adjust size as needed */
+    height: 50px; /* adjust size as needed */
+    margin-left: -10px;
+    top: -50px;
+    rotate: 120deg;
+    vertical-align: top;
+  }
+
+  .ourclasses{
+    margin-top: 50px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+  }
+  .ourclasses-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 32%;
+    padding: 30px;
+    height: 400px;
+    border-radius: 30px;
+  }
+  .ourclasses > .ourclasses-card:nth-child(1){
+    background-color: #FA9DB7;
+  }
+  .ourclasses > .ourclasses-card:nth-child(2){
+    background-color: #45B3DF;
+  }
+  .ourclasses > .ourclasses-card:nth-child(3){
+    background-color: #FDC563;
+  }
+  .ourclasses > .ourclasses-card:nth-child(1) .ourlasses-img{
+    margin-top: 20px;
+  }
+  .ourclasses > .ourclasses-card:nth-child(3) .ourlasses-img{
+    margin-top: 50px;
+  }
+  .ourclasses > .ourclasses-card:nth-child(2) .ourlasses-img{
+    margin-top: 50px;
+  }
+  .ourlasses-img{
+    transition: all 0.3s ease;  
+    }
+  .ourlasses-img:hover{
+   transform: scale(1.05);
+
+  }
+  .our-classes-title{
+    font-family: "Fredoka", sans-serif;
+    font-size: 30px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    position: relative;
+    color: white;
+  }
+  .ourclasses-desc{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: center;
+    color:  white;
+  }
+  .read-more{
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    border: none;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 18px;
+    color:  white;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    background: transparent;
+  }
+ 
+
+  @media screen and (max-width: 1270px) {
+    .ourclasses-main{
+      padding: 50px 40px;
+    }
+    .ourclasses{
+      margin-top: 50px;
+      display: flex;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 20px;
+    }
+  }
+  @media screen and (min-width: 750px) and (max-width: 1130px){
+    .ourclasses-main{
+      padding: 50px 40px;
+    }
+    .ourclasses-heading{
+      font-size: 40px;
+    }
+    .ourclasses{
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 10px;
+    }
+    .ourclasses-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: 40%;
+      padding: 30px;
+      height: 400px;
+      margin-bottom: 10px;
+      border-radius: 30px;
+    }
+
+  }
+  @media screen  and (min-width: 500px) and (max-width: 750px){
+    .ourclasses-main{
+      padding: 50px 30px;
+    }
+    .ourclasses-heading{
+      font-size: 35px;
+    }
+    .ourclasses{
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 10px;
+    }
+    .ourclasses-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: 90%;
+      padding: 30px;
+      margin-bottom: 10px;
+
+      height: 400px;
+      border-radius: 30px;
+    }
+    .ourclasses-para{
+      font-size: 18px;
+      padding-inline-start: 0%;
+      padding-inline-end: 0%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .ourclasses-main{
+      padding: 50px 20px;
+    }
+    .ourclasses-heading{
+      font-size: 35px;
+    }
+    .ourclasses{
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 10px;
+    }
+    .ourclasses-card{
+      display: flex;
+      margin-bottom: 10px;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      padding: 30px;
+      height: 400px;
+      border-radius: 30px;
+    }
+    .ourclasses-para{
+      font-size: 18px;
+      padding-inline-start: 0%;
+      padding-inline-end: 0%;
+    }
+  }
+  

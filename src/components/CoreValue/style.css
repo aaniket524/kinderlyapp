@@ -1,0 +1,193 @@
+.corevalue-main{
+    padding: 50px;
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center;
+}
+.corevalue-subheading{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color:   #ff6b7d;
+}
+.corevalue-heading{
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    position: relative;
+    color: #002B51;
+}
+.corevalue-heading::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* adjust size as needed */
+    height: 50px; /* adjust size as needed */
+    margin-left: -10px;
+    top: -50px;
+    rotate: 120deg;
+    vertical-align: top;
+  }
+.corevalue-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: center;
+    color:  rgb(0, 43, 81);
+}
+.corevalue-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.corevalue-card{
+    height: 290px;
+    padding: 30px 30px;
+    width: 23%;
+    border-radius: 20px;
+}
+.corevalue-cards > .corevalue-card:nth-child(1) {
+    background-color: #B5BABE;
+}
+.corevalue-cards > .corevalue-card:nth-child(2) {
+    background-color: #FFD4CB;
+}
+.corevalue-cards > .corevalue-card:nth-child(3) {
+    /* background-color: #FFF1CA; */
+    background-color: #B3D8F2;
+
+}
+.corevalue-cards > .corevalue-card:nth-child(4){
+    background-color: #B4DDBB;
+
+}
+.corevalue-desc{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: center;
+    color:  rgb(0, 43, 81);
+}
+.corevalue-title{
+    font-family: "Fredoka", sans-serif;
+    font-size: 35px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    position: relative;
+    color: #002B51;
+  
+}
+.corevalue-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.corevalue-img svg{
+    width: 96px;
+    height: 96px;
+    margin-bottom:20px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1250px) {
+    .corevalue-main{
+        padding: 50px 40px;}
+        .corevalue-cards{
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .corevalue-card{
+            height: 320px;
+            padding: 30px 30px 0px 30px;
+            width: 42.5%;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    .corevalue-main{
+        padding: 50px 40px;}
+        .corevalue-cards{
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .corevalue-card{
+            height: 320px;
+            padding: 30px 30px 0px 30px;
+            width: 41%;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+        .corevalue-heading{
+            font-size: 40px;
+        }
+}
+@media screen  and (min-width: 600px) and (max-width: 800px){
+    .corevalue-main{
+        padding: 50px 30px;}
+        .corevalue-heading{
+            font-size: 40px;
+        }
+        .corevalue-cards{
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .corevalue-card{
+            height: 320px;
+            padding: 30px 30px 0px 30px;
+            width: 40%;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+        .corevalue-title{
+            font-size: 32px;
+        }
+}
+@media screen and (max-width: 600px) { 
+    .corevalue-main{
+    padding: 50px 20px;}
+    .corevalue-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .corevalue-title{
+        font-size: 30px;
+    }
+    .corevalue-heading{
+        font-size: 35px;
+    }
+    .corevalue-card{
+        height: 320px;
+        padding: 30px 30px 0px 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+    .corevalue-img svg{
+        width: 96px;
+        height: 96px;
+        margin-bottom:15px;
+        margin-top: 20px;
+    }
+}

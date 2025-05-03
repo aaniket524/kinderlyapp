@@ -1,0 +1,692 @@
+.hero-container{
+    display: flex;
+    box-sizing: border-box;
+    justify-content:space-between;
+    width: 100%;
+    align-items: center;
+
+    gap: 40px;
+    align-content: center;
+  
+}
+.hero-first{
+    width: 25%;
+    background-color: #ED9DA9;
+    /* background-color: #90E0EF; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px 200px 0px 0px; 
+    overflow: hidden; 
+    padding: 0;
+    height: 100%; 
+}
+
+
+.hero-second{
+    width: 50%;
+}
+
+.hero-third {
+    width: 25%;
+    background-color: rgba(252, 187, 9, 0.699);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 200px 200px; 
+    overflow: hidden; 
+    /* padding: 0; */
+    /* clip-path: circle(55%); */
+
+    height: 100%; 
+}
+
+.hero-image.hero-image2 {
+    /* clip-path: circle(55%); */
+    width: 100%;
+    height: 100%;
+
+    /* margin: 100px !important; */
+    object-fit: cover; 
+}
+
+.hero-main{
+    /* background-color: #FFF8F0; */
+
+    background: #fdce4e21;
+    background-image: url('https://kidscenter.bzotech.com/wp-content/uploads/2024/09/bg-cloud2.png');
+    background-position: left;
+     background-repeat: repeat;
+    padding: 150px 50px 50px 50px;
+ 
+}
+.hero-heading{
+    font-family: "Fredoka", sans-serif;
+    font-size: 55px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #002B51;
+}
+.hero-text-img{
+    width: 90%;
+}
+.hero-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color:  rgb(0, 43, 81);
+}
+.hero-btn {
+    background-color: #FDCE4E; 
+    color:  rgb(0, 43, 81);
+    border: none;
+    border-radius: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 35px;
+    box-shadow: 0 8px 20px rgba(255, 111, 145, 0.3), 0 4px 10px rgba(144, 224, 239, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #FF6F91;
+    color: #FFF8F0;
+    box-shadow: 0 12px 30px rgba(255, 111, 145, 0.5), 0 6px 15px rgba(144, 224, 239, 0.4);
+    transform: translateY(-2px);
+}
+
+.hero-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    align-content: center;
+}
+
+
+
+
+.heronew-main{
+    padding: 50px;
+    padding-top: 120px;
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center;
+    background: #fdce4e21;
+
+}
+.heronew{
+    background-image: url('https://kidscenter.bzotech.com/wp-content/uploads/2024/09/bg-cloud2.png');    /* background: linear-gradient(to right, white 50%, #FDC4CB 50%); */
+
+}
+.heronew-main::after{
+    background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+    content: '';
+    position: absolute;
+    bottom: -110px;
+    right: 0px;
+    width: 100%;  /* set width explicitly */
+    height: 100%; /* set height explicitly */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;   
+    rotate: 180deg;  /*80 adjust based on other content */
+    opacity: 1;
+    pointer-events: none; 
+}
+.heronew{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.heronew-container1{
+    width: 50%;
+}
+.heronew-container2{
+    width: 50%;
+}
+.heronew-image{
+    width: 100%;
+    height: auto;
+}
+
+.heronew-image.hero-image2 {
+    /* clip-path: circle(55%); */
+    width: 100%;
+    height: 100%;
+
+    /* margin: 100px !important; */
+    object-fit: cover; 
+}
+.heronew-heading{
+    font-family: "Fredoka", sans-serif;
+    font-size: 55px;
+    /* text-transform: capitalize; */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #002B51;
+}
+.heronew-text-img{
+    width: 90%;
+}
+
+
+.heronew-para{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color:  rgb(0, 43, 81);
+}
+.heronew-btn {
+    background-color: #FF6F91; /* Cheerful pink */
+    color: #002B51; /* Deep navy text for contrast */
+    border: none;
+    border-radius: 50px; /* More rounded pill shape */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px; /* Slightly bigger for a more friendly feel */
+    box-shadow: 0 10px 25px rgba(255, 111, 145, 0.3), 0 6px 15px rgba(144, 224, 239, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    
+}
+
+.heronew-btn:hover {
+    transform: scale(1.05);
+    color: white;
+    background-color: #ff5e83; /* Slightly deeper pink on hover */
+    box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239, 0.4);
+}
+
+.heronew-text-img{
+    width: 80%;
+}
+
+/* .heronew-btn:hover{
+    background-color: #FDCE4E;
+    color: #FFF8F0;
+    box-shadow: 0 12px 30px rgba(255, 111, 145, 0.5), 0 6px 15px rgba(144, 224, 239, 0.4);
+    transform: translateY(-2px);
+} */
+
+.heronew-button{
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    width: auto;
+    align-content: initial;
+}
+
+.heronew-main {
+    position: relative; /* required for absolute positioning inside */
+}
+
+/* Trophy Image - Top Left */
+
+
+/*cloudss on bottom */
+.heronew-main::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    rotate: 180deg;
+    z-index: 2;
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* Decorative Images inside .heronew */
+/* .heronew::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 60px;
+    height: 60px;
+    background-image: url('https://media-public.canva.com/ZkX80/MAGNzoZkX80/1/t.png'); /* vertical 3-star */
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+} */ 
+
+.heronew::after {
+    content: '';
+    position: absolute;
+    bottom: -130px;
+    right: 40px;
+    width: 190px;
+    height: 190px;
+    background-image: url('https://media-public.canva.com/Zg3yQ/MAEfmSZg3yQ/1/t.png'); /* kids image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: floatX 4s ease-in-out infinite;
+
+}
+
+/* Additional Images Using More Pseudo-elements */
+
+.heronew-container1::before {
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://media-public.canva.com/UhY7I/MAGNIsUhY7I/1/t.png'); /* bulb */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: floatY 4s ease-in-out infinite;
+
+}
+
+.heronew-container1::after {
+    content: '';
+    position: absolute;
+    top: 270px;
+    left: 500px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png'); /* pencil */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: floatX 10s ease-in-out infinite;
+
+}
+ /* sun */
+.heronew-container2::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://media-public.canva.com/O9PRw/MAEWdxO9PRw/1/t.png'); /* sun */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: rotate360 10s ease-in-out infinite;
+
+}
+@keyframes rotate360 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* // two little girle  */
+.heronew-container2::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://templates.envytheme.com/ketan/default/assets/img/main-banner/banner-shape-6.png'); /* two little girls */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: floatY 4s ease-in-out infinite;
+
+}
+
+/* Optional: mini owl near heading or any area */
+.heronew-heading::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-image: url('https://templates.envytheme.com/ketan/default/assets/img/main-banner/banner-shape-1.png'); /* owl */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: floatY 4s ease-in-out infinite;
+
+    z-index: 2;
+}
+@keyframes floatY {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes floatX {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(15px); }
+    100% { transform: translateX(0); }
+}
+
+
+@media screen and (max-width: 1270px) {
+    .heronew-main{
+        padding: 50px 40px;
+        padding-top: 120px;}
+    .heronew-heading{
+        font-size: 45px;
+    }
+    .heronew-text-img{
+        width: 85%;
+    }
+}
+@media screen and (min-width: 860px) and (max-width: 1000px){
+    .heronew-main{
+        padding: 50px 40px;
+        padding-top: 120px;}
+    .heronew-heading{
+        font-size: 40px;
+    }
+    .heronew-text-img{
+        width: 85%;
+    }
+    
+.heronew-container1::before {
+    content: '';
+    position: absolute;
+    top: 430px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://media-public.canva.com/UhY7I/MAGNIsUhY7I/1/t.png'); /* bulb */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: floatY 4s ease-in-out infinite;
+
+}
+
+.heronew-container1::after {
+    content: '';
+    position: absolute;
+    top: 500px;
+    left: 290px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png'); /* pencil */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: floatX 10s ease-in-out infinite;
+
+}
+ /* sun */
+.heronew-container2::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://media-public.canva.com/O9PRw/MAEWdxO9PRw/1/t.png'); /* sun */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: rotate360 10s ease-in-out infinite;
+
+}
+.heronew-heading::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('https://templates.envytheme.com/ketan/default/assets/img/main-banner/banner-shape-1.png'); /* owl */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: floatY 4s ease-in-out infinite;
+
+    z-index: -1;
+}
+/* // two little girle  */
+.heronew-container2::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    width: 90px;
+    height: 90px;
+    background-image: url('https://templates.envytheme.com/ketan/default/assets/img/main-banner/banner-shape-6.png'); /* two little girls */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: none;
+
+}
+.heronew::after {
+    display: none;
+}
+}
+@media screen  and (min-width: 500px) and (max-width: 860px){
+    .heronew-main{
+        padding: 50px 30px;
+        padding-top: 120px;}
+    .heronew-heading{
+        font-size: 40px;
+    }
+    .heronew-text-img{
+        width: 60%;
+    }
+    
+.heronew{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.heronew-container1{
+    width: 100%;
+}
+.heronew-container2{
+    width: 100%;
+}
+
+.heronew-container1::before {
+    content: '';
+    position: absolute;
+    top: 430px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://media-public.canva.com/UhY7I/MAGNIsUhY7I/1/t.png'); /* bulb */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: floatY 4s ease-in-out infinite;
+
+}
+
+.heronew-container1::after {
+    content: '';
+    position: absolute;
+    top: 500px;
+    left: 290px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png'); /* pencil */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: floatX 10s ease-in-out infinite;
+
+}
+ /* sun */
+.heronew-container2::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://media-public.canva.com/O9PRw/MAEWdxO9PRw/1/t.png'); /* sun */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: rotate360 10s ease-in-out infinite;
+
+}
+.heronew-heading::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('https://templates.envytheme.com/ketan/default/assets/img/main-banner/banner-shape-1.png'); /* owl */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: floatY 4s ease-in-out infinite;
+
+    z-index: -1;
+}
+/* // two little girle  */
+.heronew-container2::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    width: 90px;
+    height: 90px;
+    background-image: url('https://templates.envytheme.com/ketan/default/assets/img/main-banner/banner-shape-6.png'); /* two little girls */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: none;
+
+}
+.heronew::after {
+    display: none;
+}
+}
+@media screen and (max-width: 500px) {
+    .heronew-main{
+        padding: 50px 20px;
+        padding-top: 100px;}
+    .heronew-heading{
+        margin-top: 20px;
+        font-size: 35px;
+        padding-inline-start: 0%;
+        padding-inline-end: 0%;
+    }
+    .heronew-text-img{
+        width: 90%;
+    }
+.heronew{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.heronew-container1{
+    width: 100%;
+}
+.heronew-container2{
+    width: 100%;
+}
+.heronew-container1::before {
+    content: '';
+    position: absolute;
+    top: 400px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://media-public.canva.com/UhY7I/MAGNIsUhY7I/1/t.png'); /* bulb */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: floatY 4s ease-in-out infinite;
+
+}
+
+.heronew-container1::after {
+    content: '';
+    position: absolute;
+    top: 500px;
+    left: 290px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png'); /* pencil */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: floatX 10s ease-in-out infinite;
+
+}
+ /* sun */
+.heronew-container2::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://media-public.canva.com/O9PRw/MAEWdxO9PRw/1/t.png'); /* sun */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: rotate360 10s ease-in-out infinite;
+
+}
+.heronew-heading::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('https://templates.envytheme.com/ketan/default/assets/img/main-banner/banner-shape-1.png'); /* owl */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: floatY 4s ease-in-out infinite;
+
+    z-index: -1;
+}
+/* // two little girle  */
+.heronew-container2::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    width: 90px;
+    height: 90px;
+    background-image: url('https://templates.envytheme.com/ketan/default/assets/img/main-banner/banner-shape-6.png'); /* two little girls */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: none;
+
+}
+.heronew::after {
+    display: none;
+}
+
+}

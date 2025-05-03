@@ -1,0 +1,147 @@
+.aboutgrid-main{
+    padding: 0px 50px 0px 50px;
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center 
+}
+.aboutgrid-container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.aboutgrid1, .aboutgrid2{
+    width: 48%;
+}
+.aboutgrid-subheading{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: initial;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color:   rgba(255, 166, 0, 0.726)
+}
+.aboutgrid-heading::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* adjust size as needed */
+    height: 50px; /* adjust size as needed */
+    margin-left: -10px;
+    top: -50px;
+    rotate: 120deg;
+    vertical-align: top;
+  }
+.aboutgridpara{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: initial;
+    color:  rgb(0, 43, 81);
+}
+.aboutgrid-heading{
+    position: relative;
+    font-family: "Fredoka", sans-serif;
+    font-size: 45px;
+    /* text-transform: capitalize; */
+    text-align: initial;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: #002B51;
+
+}
+.aboutgrid-image{
+    width: 100%;
+}
+
+.aboutpage-btn{
+    margin-top: 20px;
+    background-color: #ffa600e5; 
+    color: white; 
+    border: none;
+    border-radius: 50px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px; /* Slightly bigger for a more friendly feel */
+    box-shadow: 0 10px 25px rgba(255, 245, 111, 0.3), 0 6px 15px rgba(144, 224, 239, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    
+}
+
+.aboutpage-btn:hover {
+    transform: scale(1.05);
+    color: white;
+    background-color: #ffa600; 
+    box-shadow: 0 12px 30px rgba(255, 233, 111, 0.4), 0 8px 18px rgba(144, 224, 239, 0.4);
+}
+
+
+@media screen and (max-width: 1270px) {
+    .aboutgrid-main{
+        padding: 0px 40px 0px 40px;}
+    .aboutgrid-container1{
+        gap: 20px;      
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    .aboutgrid-main{
+        padding: 0px 30px;}
+        .aboutgrid-container1{
+            gap: 10px;      
+        }
+        .aboutgrid-heading{
+            font-size: 40px;
+        }
+        .aboutgrid1, .aboutgrid2{
+            width: 49%;
+        }
+}
+@media screen  and (min-width: 500px) and (max-width: 800px){
+    .aboutgrid-main{
+        padding: 0px 30px;}
+        .aboutgrid-container1{
+            gap: 10px;     
+            /* display: flex; */
+            flex-direction: column; 
+        }
+        .aboutgrid-heading{
+            font-size: 35px;
+        }
+        .aboutgrid1{
+            width: 90%;
+        }
+        .aboutgrid1, .aboutgrid2{
+            width: 100%;
+        }
+}
+@media screen and (max-width: 500px) {
+    .aboutgrid-main{
+        padding: 0px 20px;}
+        .aboutgrid-container1{
+            gap: 10px;     
+            /* display: flex; */
+            flex-direction: column; 
+        }
+        .aboutgrid-heading{
+            font-size: 35px;
+        }
+        .aboutgrid1{
+            width: 100%;
+        }
+        .aboutgrid1, .aboutgrid2{
+            width: 100%;
+        }
+}

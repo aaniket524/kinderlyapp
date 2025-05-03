@@ -1,0 +1,255 @@
+.addmission-main{
+    padding: 0px 50px 100px 50px;
+    max-width: 1420px;
+    overflow: hidden;
+    justify-self: center 
+}
+.addmission-icon{
+    width: 96px;
+    height: 96px;
+    margin-top: 30px;    
+    transition: all 0.3s ease;
+
+    margin-bottom:80px;
+}
+.addminssion{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 40px;
+    box-sizing: border-box;
+}
+.addminssion-card{
+    width: 33%;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    padding: 35px;
+    height: 350px;
+    border-radius: 30px;
+}
+.addminssion-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1),
+                0 6px 10px rgba(0, 0, 0, 0.06);
+  }
+.addminssion > .addminssion-card:nth-child(1) {
+    background-color: #FFD4CA;
+}
+
+.addminssion > .addminssion-card:nth-child(2) {
+    background-color: #B3DDBA;
+}
+.addminssion > .addminssion-card:nth-child(3) {
+    background-color: #FFF1CA;
+}
+.addmision-heading{
+    font-family: "Fredoka", sans-serif;
+    font-size: 35px;
+    /* font-weight: 500; */
+    /* text-transform: capitalize; */
+    text-align: initial;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    color: #002B51;
+}
+.add-desc{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 17px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: initial;
+    color:  rgb(0, 43, 81);
+}
+
+.addmission-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px 0px;
+}
+.addmissionbtn{
+    font-family: "Fredoka", sans-serif;
+    color:  rgb(0, 43, 81);
+        font-size: 18px;
+    border: none;
+    font-weight:500;
+    border-radius: 50px; /* Fully rounded pill shape */
+    padding: 16px 40px;
+    background-color: #FFD4CA; /* Soft coral pink */
+    box-shadow: 0 0 0 4em var(#ffd4ca,#282828) inset;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+
+}
+.addmissionbtn:hover{
+    background-color: #ffd4ca; 
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 110, 97, 0.075), 0 6px 15px rgba(255, 154, 139, 0.199);
+}
+.addmission-icon:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1315px) {
+    .addmission-main{
+        padding: 0px 40px 100px 40px;
+    }
+    .addminssion-card{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1170px){
+    .addmission-main{
+        padding: 0px 40px 100px 40px;
+    }
+    .addminssion-card{
+        /* height: 400px; */
+    }
+    .addmission-icon{
+        width: 96px;
+        height: 96px;
+        margin-top: 30px;    
+        transition: all 0.3s ease;
+    
+        margin-bottom:50px;
+    }
+}
+@media screen  and (min-width: 500px) and (max-width: 1150px){
+    .addmission-main{
+        padding: 0px 30px 100px 30px;
+    }
+    .addminssion {
+        flex-direction: column;
+        align-items: center;
+      }
+      .addminssion-card {
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    .addmission-icon{
+        width: 96px;
+        height: 96px;
+        margin-top: 30px;    
+        transition: all 0.3s ease;
+    
+        margin-bottom:50px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .addmission-main{
+        padding: 0px 20px 50px 20px;
+    }
+    .addminssion {
+        flex-direction: column;
+        align-items: center;
+      }
+      .addminssion-card {
+        width: 80%;
+        height: auto;
+        margin-bottom: 0px;
+      }
+
+    .addmision-heading{
+        font-family: "Fredoka", sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        color: #002B51;
+    }
+    .add-desc{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin-top: 10px;
+        line-height: 1.6;
+        font-size: 17px;
+        margin-bottom: 30px;
+        font-weight: normal;
+        text-align: center;
+        color:  rgb(0, 43, 81);
+    }
+    .addmission-icon svg{ 
+        width: 96px;
+        height: 96px;
+        margin-top: 40px;    
+        transition: all 0.3s ease;
+        margin-bottom:20px;
+
+        align-self: center;
+        justify-self: center;
+    }
+    .addmission-icon{
+        width: 100%;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        align-content: center;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .addmission-main{
+        padding: 0px 20px 40px 20px;
+    }
+    .addminssion {
+        flex-direction: column;
+        align-items: center;
+      }
+      .addminssion-card {
+        width: 85%;
+        height: auto;
+        margin-bottom: 0px;
+        border: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        padding: 20px;
+      }
+
+      
+    .addmision-heading{
+        font-family: "Fredoka", sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        color: #002B51;
+    }
+    .add-desc{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin-top: 10px;
+        line-height: 1.6;
+        font-size: 17px;
+        margin-bottom: 30px;
+        font-weight: normal;
+        text-align: center;
+        color:  rgb(0, 43, 81);
+    }
+    .addmission-icon svg{ 
+        width: 96px;
+        height: 96px;
+        margin-top: 50px;    
+        transition: all 0.3s ease;
+        margin-bottom:10px;
+
+        align-self: center;
+        justify-self: center;
+    }
+    .addmission-icon{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        align-content: center;
+    }
+
+}
