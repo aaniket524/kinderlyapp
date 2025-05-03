@@ -30,7 +30,8 @@ function AboutPage(){
 
     <Team/>
     <EnquirySection/>
-    </motion.div>)
+    </motion.div>
+    )
 }
 
 export default AboutPage;

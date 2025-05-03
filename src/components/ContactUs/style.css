@@ -345,7 +345,13 @@ margin-bottom: 20px !important;
         align-content: center;
         gap: 30px;
     }
-    .contactus, .contactus-form{
+    .contactus{
+        margin-top: 0px;
+        width: 95% !important;
+       
+        align-content: center;
+    }
+     .contactus-form{
         margin-top: 0px;
         width: 95%;
        
@@ -465,7 +471,13 @@ margin-bottom: 20px !important;
         align-content: center;
         gap: 30px;
     }
-    .contactus, .contactus-form{
+    .contactus{
+        margin-top: 0px;
+        width: 95% !important;
+       
+        align-content: center;
+    }
+     .contactus-form{
         margin-top: 0px;
         width: 95%;
        
