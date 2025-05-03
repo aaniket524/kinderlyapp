@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './mobheader.css';
 import { Link, useNavigate } from "react-router-dom";
 import cross from '../../assets/cross-menu.svg';
-import menu from '../../assets/menu-alt-1.svg'
+import menu from '../../assets/menu-alt-2.svg'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 
