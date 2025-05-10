@@ -1,7 +1,14 @@
 import React from "react";
 import './style.css';
+import bee from '../../assets/decos/bee.png'
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function AddmissionProcess(){
+  const navigate = useNavigate()
+    const handleClick=()=>{
+        navigate('/contact-us')
+    }
     return(
         <>
         <div className="addmission-main">
@@ -15,11 +22,20 @@ function AddmissionProcess(){
                 
                 </p>
                 <div className='divide'>
-       <img src='https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h2-bg-title.png'
+       <img src={bee}
         className='img-fluid divider-img float-down'/>
        </div>
-            <div className="addminssion">
-            <div className="addminssion-card">
+            <div 
+        
+            className="addminssion"
+            >
+            <motion.div 
+               
+               initial={{ opacity: 0, y: 40 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.5, delay: 0.5 }}
+               exit={{ opacity: 0, y: -40 }}
+            className="addminssion-card">
                 <div className="addmission-icon">
                 <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -74,8 +90,13 @@ function AddmissionProcess(){
                     Fill out the submission form and a member of our team will get in touch with you directly.
                     </p>
                 </div>
-            </div>
-            <div className="addminssion-card">
+            </motion.div>
+            <motion.div    
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            exit={{ opacity: 0, y: -40 }}
+            className="addminssion-card">
                 <div className="addmission-icon">
                 <svg
   id="Layer_1"
@@ -127,8 +148,13 @@ function AddmissionProcess(){
 
 </p>
                 </div>
-            </div>
-            <div className="addminssion-card">
+            </motion.div>
+            <motion.div 
+               initial={{ opacity: 0, y: 40 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.5, delay: 0.5 }}
+               exit={{ opacity: 0, y: -40 }}
+            className="addminssion-card">
                 <div className="addmission-icon">
                 <svg
     id="Layer_1"
@@ -182,10 +208,10 @@ function AddmissionProcess(){
 
 </p>
                 </div>
+            </motion.div>
             </div>
-            </div>
-            <div className="addmission-btn">
-                <button className="addmissionbtn">Start Today</button>
+            <div className="addmission-btn" >
+                <button className="addmissionbtn" onClick={handleClick}>Start Today</button>
             </div>
         </div>
         </>

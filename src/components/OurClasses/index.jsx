@@ -1,10 +1,19 @@
 import React from 'react';
 import './style.css';
+import pro1 from '../../assets/aboutus/eduprogrm1.png'
+import pro2 from '../../assets/aboutus/eduprogram2.png'
+import pro3 from '../../assets/aboutus/eduprogram3.png'
+import { motion } from "framer-motion";
 
 function OurClasses(){
     return(
         <>
-        <div className='ourclasses-main'>
+        <motion.div 
+         initial={{ opacity: 0, y: 30 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         exit={{ opacity: 0, y: -30 }}
+         transition={{ duration: 0.5 }}
+        className='ourclasses-main'>
             <h4 className='ourclasses-subheading'>
                 Courses
             </h4>
@@ -17,8 +26,13 @@ function OurClasses(){
 
             </p>
             <div className='ourclasses'>
-                <div className='ourclasses-card'>
-                    <img src='https://wgl-dsites.net/littledino/wp-content/uploads/2019/08/info-box_01-1.png'
+                <motion.div 
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 30 }}
+                  transition={{ duration: 0.5 }}
+                className='ourclasses-card'>
+                    <img src={pro1}
                     className='ourlasses-img img-fluid' />
                     <h4 className='our-classes-title'>
                         Early Education
@@ -29,9 +43,14 @@ function OurClasses(){
                     <button className='read-more'>
                         Read More
                     </button>
-                </div>
-                <div className='ourclasses-card'>
-                    <img src='https://wgl-dsites.net/littledino/wp-content/uploads/2019/08/info-box_01-2.png'
+                </motion.div>
+                <motion.div 
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -30 }}
+                  transition={{ duration: 0.5 }}
+                className='ourclasses-card'>
+                    <img src={pro2}
                     className='ourlasses-img img-fluid'/>
                     <h4 className='our-classes-title'>
                         ABC Program
@@ -43,9 +62,14 @@ function OurClasses(){
                     <button className='read-more'>
                         Read More
                     </button>
-                </div>
-                <div className='ourclasses-card'>
-                    <img src='https://wgl-dsites.net/littledino/wp-content/uploads/2019/08/info-box_01-3.png'
+                </motion.div>
+                <motion.div 
+                   initial={{ opacity: 0, x: 30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   exit={{ opacity: 0, x: -30 }}
+                   transition={{ duration: 0.5 }}
+                className='ourclasses-card'>
+                    <img src={pro3}
                     className='ourlasses-img img-fluid'/>
                     <h4 className='our-classes-title'>
                     First Steps 4K
@@ -57,9 +81,9 @@ function OurClasses(){
                     <button className='read-more'>
                         Read More
                     </button>
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
         </>
     )
 }

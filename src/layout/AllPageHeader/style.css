@@ -1,5 +1,5 @@
 .allpageheader-main {
-    background-image: url('https://wgl-dsites.net/littledino/wp-content/uploads/2019/08/page_title_bg.png');
+    background-image: url('../../assets/decos/topheaders.png');
     background-size: cover;
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@
   .allpageheader-title::after {
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/BYfgg/MAGNzpBYfgg/1/t.png');
+    background-image: url('../../assets/decos/commentheart.webp');
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px; /* adjust size as needed */
@@ -49,7 +49,7 @@
   .allpageheader-title::before {
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/o7yc8/MAFGrso7yc8/1/t.png');
+    background-image: url('../../assets/decos/butterfly.webp');
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px; /* adjust size as needed */
@@ -58,4 +58,10 @@
     top: -50px;
     transform: skew(-1);
     vertical-align: top;
+  }
+
+  @media screen and (max-width: 600px) {
+    .allpageheader-title {
+      font-size: 38px;
+    }
   }

@@ -8,21 +8,28 @@ import Gallery from "../../components/Gallery";
 import Testimonials from "../../components/Testimonials";
 import Faq from "../../components/Faq";
 import EnquirySection from "../../components/EnquirySection";
-
+import Testimonails from "../../components/Testimonials/testimonails";
+import { motion } from "framer-motion";
 
 function Home(){
     return(
-        <>
+        <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.4 }}>
+
         <HeroNew/>
         <About/>
         <WhyUs/>
         <EduProgram/>
         <Steps/>
         <Gallery/>
-        <Testimonials/>
+        <Testimonails/>
+        {/* <Testimonials/> */}
         <Faq/>
         <EnquirySection/>
-        </>
+        </motion.div>
     )
 }
 

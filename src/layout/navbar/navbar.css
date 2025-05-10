@@ -1,17 +1,20 @@
 .main-navbar {
     background-color: white;
-  
-    /* background: linear-gradient(135deg, #FFF8F0, #FFCC70); */
-    box-shadow: 0 10px 30px rgba(144, 224, 239, 0.2), 0 4px 15px rgba(255, 111, 145, 0.25);
+    box-shadow: 0 1px 1px rgba(255, 154, 139, 0.3), 0 1px 1px rgba(255, 200, 150, 0.2);
 
     /* border-bottom: 1px solid #FF6F91; */
     width: 100%;
     max-width: 1420px;
     margin: 0 auto;
-    position: fixed;
-    z-index: 100;
-    overflow: hidden;
+    /* position: fixed; */
+   
     justify-self: center;
+}
+.nav-logo-container h1{
+    color: #002B51;
+}
+.nav-logo-container a{
+    color: #FF6F61;
 }
 
 .main-navbar::after {
@@ -33,6 +36,9 @@
     align-items: center;
     height: 80px;
     position: relative;
+     z-index: 100 !important;
+    overflow: hidden;
+  
   
 }
 

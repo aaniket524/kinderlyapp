@@ -7,6 +7,19 @@
     justify-self: center; 
 
 }
+.faq-para {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  
+  .faq-para.open {
+    max-height: 200px;  
+    opacity: 1;
+    margin-top: 10px;
+  }
+  
 .faq-main::before{
     content: '';
     position: absolute;
@@ -19,7 +32,7 @@
     background-position: center;
     z-index: 10; 
     opacity: .9;   
-    background:url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/line-1.png)
+    background:url(../../assets/decos/starline.png)
     /* url(http://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/shape-2.png);
     https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/star.png */
 }
@@ -37,7 +50,7 @@
     opacity: 1;     
 
     /* transform: translateY(-50%); */
-    background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/line-shape-2.png);
+    background: url(../../assets/decos/plainline.png);
     /* background-image: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/shape-1.png); */
 }
 .faq-subheading{
@@ -53,14 +66,14 @@
 .faq-heading::after{
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/Ns9Mw/MAFyECNs9Mw/1/t.png');
+    background-image: url('../../assets/decos/yellowheaddeco.webp');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50px; /* adjust size as needed */
-    height: 50px; /* adjust size as needed */
-    margin-left: -10px;
+    width: 45px; /* adjust size as needed */
+    height: 45px; /* adjust size as needed */
+    margin-left: 0px;
     top: 50px;
-    rotate: 80deg;
+    rotate: 12deg;
     vertical-align: top;
   }
 .faq-heading{
@@ -95,7 +108,7 @@
 .faq-main-title{
     display: flex;
     padding: 10px 20px;
-    justify-content: space-between;
+    justify-content: initial;
     align-items: initial;
     gap: 30px;
     align-content: initial;

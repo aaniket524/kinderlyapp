@@ -8,7 +8,7 @@
     justify-self: center; 
 }
 .steps-main::before{
-    background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png
+    background: url(../../assets/section-top-shape.png
     );
     content: '';
     position: absolute;
@@ -23,7 +23,7 @@
     pointer-events: none; 
 } 
 .inner-steps::before{
-    background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+    background: url(../../assets/section-top-shape.png);
     content: '';
     position: absolute;
     top: 0px;
@@ -44,7 +44,7 @@
     width: 100%;
     height: 100%;
     background: 
-        url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/mask.png') no-repeat left center;
+        url('../../assets/decos/orangecloud.png') no-repeat left center;
     background-size: 150px, 20px;
     background-position: left center, left top 10px;
     z-index: 1;
@@ -57,7 +57,7 @@
     top: 100px;
     width: 50px;
     height: 100px;
-    background: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png') no-repeat;
+    background: url('../../assets/pencil.webp') no-repeat;
     background-size: contain;
     z-index: -1;
   }
@@ -69,7 +69,7 @@
     right: 10px;
     width: 100px;
     height: 100px;
-    background: url('https://media-public.canva.com/BYfgg/MAGNzpBYfgg/1/t.png') no-repeat;
+    background: url('../../assets/decos/commentheart.webp') no-repeat;
     background-size: contain;
     z-index: -1;
   }
@@ -81,7 +81,7 @@
     top: 200px;
     width: 120px;
     height: 120px;
-    background: url('https://media-public.canva.com/bB__U/MAE8XEbB__U/1/t.png') no-repeat;
+    background: url('../../assets/decos/thunder.webp') no-repeat;
     background-size: contain;
     z-index: 0;
   }
@@ -118,7 +118,7 @@
     /* Flip horizontally */
         opacity: .9;   
     overflow: hidden !important;
-    background:url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/left.png)
+    background:url(../../assets/decos/lefty.png)
      /* url(http://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/shape-2.png) */
     
 }
@@ -134,14 +134,14 @@
 .steps-heading::after {
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-image: url('../../assets/decos/purpledeco.webp');
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px; /* adjust size as needed */
     height: 50px; /* adjust size as needed */
     margin-left: -10px;
     top: -50px;
-    rotate: 120deg;
+    rotate: 70deg;
     vertical-align: top;
   }
 .steps-heading{
@@ -313,7 +313,7 @@
         padding-inline-end: 10%;
     }
     .steps-main::before{
-        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png
+        background: url(../../assets/section-top-shape.png
         );
         content: '';
         position: absolute;
@@ -328,7 +328,7 @@
         pointer-events: none; 
     } 
     .inner-steps::before{
-        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+        background: url(../../assets/section-top-shape.png);
         content: '';
         position: absolute;
         top: 0px;
@@ -349,7 +349,7 @@
         width: 100%;
         height: 100%;
         background: 
-            url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/mask.png') no-repeat left center;
+            url('../../assets/decos/orangecloud.png') no-repeat left center;
         background-size: 100px, 20px;
         background-position: left center, left top 10px;
         z-index: 1;
@@ -362,7 +362,7 @@
         top: 110px;
         width: 40px;
         height:40px;
-        background: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png') no-repeat;
+        background: url('../../assets/pencil.webp') no-repeat;
         background-size: contain;
         z-index: -1;
       }
@@ -373,7 +373,7 @@
         right: 10px;
         width: 50px;
         height: 50px;
-        background: url('https://media-public.canva.com/BYfgg/MAGNzpBYfgg/1/t.png') no-repeat;
+        background: url('../../assets/decos/commentheart.webp') no-repeat;
         background-size: contain;
         z-index: -1;
       }
@@ -384,7 +384,7 @@
         top: 200px;
         width: 40px;
         height: 40px;
-        background: url('https://media-public.canva.com/bB__U/MAE8XEbB__U/1/t.png') no-repeat;
+        background: url('../../assets/decos/thunder.webp') no-repeat;
         background-size: contain;
         z-index: 0;
       }
@@ -409,7 +409,7 @@
         padding-inline-end: 0%;
     }
     .steps-main::before{
-        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png
+        background: url(../../assets/section-top-shape.png
         );
         content: '';
         position: absolute;
@@ -424,7 +424,7 @@
         pointer-events: none; 
     } 
     .inner-steps::before{
-        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+        background: url(../../assets/section-top-shape.png);
         content: '';
         position: absolute;
         top: 0px;
@@ -445,7 +445,7 @@
         width: 100%;
         height: 100%;
         background: 
-            url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/mask.png') no-repeat left center;
+            url('../../assets/decos/orangecloud.png') no-repeat left center;
         background-size: 100px, 20px;
         background-position: left center, left top 10px;
         z-index: 1;
@@ -458,7 +458,7 @@
         top: 110px;
         width: 40px;
         height:40px;
-        background: url('https://media-public.canva.com/dopac/MAGNIjdopac/1/t.png') no-repeat;
+        background: url('../../assets/pencil.webp') no-repeat;
         background-size: contain;
         z-index: -1;
       }
@@ -469,7 +469,7 @@
         right: 10px;
         width: 50px;
         height: 50px;
-        background: url('https://media-public.canva.com/BYfgg/MAGNzpBYfgg/1/t.png') no-repeat;
+        background: url('../../assets/decos/commentheart.webp') no-repeat;
         background-size: contain;
         z-index: -1;
       }
@@ -480,7 +480,7 @@
         top: 200px;
         width: 40px;
         height: 40px;
-        background: url('https://media-public.canva.com/bB__U/MAE8XEbB__U/1/t.png') no-repeat;
+        background: url('../../assets/decos/thunder.webp') no-repeat;
         background-size: contain;
         z-index: 0;
       }

@@ -1,0 +1,42 @@
+.appointment{
+    padding: 80px 50px;
+    padding-top:150px;
+}
+.contactus-lists ul li{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 1.4;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: initial;
+    color:#002B51;
+    list-style: circle;
+}
+.contactus, .contactus-forms{
+    margin-top: 0px;
+    width: 40%;
+    align-content: initial;
+}
+.contactus-forms{
+    background:rgb(241, 240, 240);
+    border-radius: 20px;
+    padding: 40px;
+}
+.contactus-forms .contactus-form-detail input{
+    width: 93%;
+    padding: 5px 10px 5px 20px;
+    color: #666666;
+
+}
+
+.contactus-containers{
+    background: #bebdbd67;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    align-content: initial;
+    gap: 50px;
+    padding: 80px 50px;
+    border-radius: 20px;
+}

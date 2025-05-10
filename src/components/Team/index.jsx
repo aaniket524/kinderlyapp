@@ -1,10 +1,21 @@
 import React from "react";
 import './style.css'
+import team1 from '../../assets/aboutus/team1.webp'
+import team2 from '../../assets/aboutus/team2.webp'
+import team3 from '../../assets/aboutus/team3.webp'
+import team4 from '../../assets/aboutus/team4.webp'
+import { motion } from "framer-motion";
 
 function Team(){
     return(
         <>
-        <div className="team-main">
+        <motion.div 
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           exit={{ opacity: 0, y: -30 }}
+           transition={{ duration: 0.5 }}
+        className="team-main"
+        >
             <h4 className="team-subheading">
             Our Caregivers
             </h4>
@@ -16,9 +27,14 @@ function Team(){
              about providing the best care for your children.
             </p>
         <div className="team-card-container">
-        <div className="team-cards">
+        <motion.div 
+           initial={{ opacity: 0, x: -30 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           exit={{ opacity: 0, x: 30 }}
+           transition={{ duration: 0.5, ease:'easeInOut' }}
+        className="team-cards">
             <div className="team-imagepart">
-                <img src="https://framerusercontent.com/images/NRYX8R61FBvnLGycEQyX2k4AJA.png?scale-down-to=512"
+                <img src={team4}
                 className="img-fluid team-image"/>
             </div>
             <div className="team-contentpart">
@@ -35,10 +51,15 @@ function Team(){
                 </p>
             </div>
             
-        </div>
-        <div className="team-cards">
+        </motion.div>
+        <motion.div 
+         initial={{ opacity: 0, x: 30 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         exit={{ opacity: 0, x: -30 }}
+         transition={{ duration: 0.5, ease:'easeInOut' }}
+        className="team-cards">
             <div className="team-imagepart">
-                <img src="https://framerusercontent.com/images/a8hLWf3k2xreDajNyggySaAvc.png?scale-down-to=512"
+                <img src={team1}
                 className="img-fluid team-image"/>
             </div>
             <div className="team-contentpart">
@@ -54,10 +75,15 @@ function Team(){
                 </p>
             </div>
             
-        </div>
-        <div className="team-cards">
+        </motion.div>
+        <motion.div 
+         initial={{ opacity: 0, x: -30 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         exit={{ opacity: 0, x: 30 }}
+         transition={{ duration: 0.5,ease:'easeInOut' }}
+        className="team-cards">
             <div className="team-imagepart">
-                <img src="https://framerusercontent.com/images/E8qOT89BY7QVEJ5ZMONeEpArk0.png?scale-down-to=512"
+                <img src={team2}
                 className="img-fluid team-image"/>
             </div>
             <div className="team-contentpart">
@@ -73,10 +99,14 @@ function Team(){
                 </p>
             </div>
             
-        </div>
-        <div className="team-cards">
+        </motion.div>
+        <motion.div 
+         initial={{ opacity: 0, x: 30 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         exit={{ opacity: 0, x: -30 }}
+         transition={{ duration: 0.5,ease:'easeInOut' }}className="team-cards">
             <div className="team-imagepart">
-                <img src="https://framerusercontent.com/images/878Q8aG6ay5zcFSjbZ5tXMTGY.png?scale-down-to=512"
+                <img src={team3}
                 className="img-fluid team-image"/>
             </div>
             <div className="team-contentpart">
@@ -92,9 +122,9 @@ function Team(){
                 </p>
             </div>
             
+        </motion.div>
         </div>
-        </div>
-        </div>
+        </motion.div>
         </>
     )
 }

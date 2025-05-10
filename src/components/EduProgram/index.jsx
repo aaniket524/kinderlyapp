@@ -1,5 +1,10 @@
 import React from 'react';
-import './style.css'
+import './style.css';
+import bee from '../../assets/decos/bee.png'
+import edu1 from '../../assets/hedu/h2-edu1.png'
+import edu2 from '../../assets/hedu/h2-edu2.png'
+import edu3 from '../../assets/hedu/h2-edu3.png'
+import edu4 from '../../assets/hedu/h2-edu4.png'
 
 function EduProgram(){
     return(<>
@@ -11,13 +16,13 @@ function EduProgram(){
         Our Educational Adventures
         </h2>
        <div className='divide'>
-       <img src='https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h2-bg-title.png'
-        className='img-fluid divider-img'/>
+       <img src={bee}
+        className='img-fluid divider-img float-down'/>
        </div>
         <div className='eduprogram-container'>
             <div className='eduprograms'>
                 <div className='eduprogram-image'>
-                    <img src='https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h2-edu1.png'
+                    <img src={edu1}
                     className='img-fluid eduprogram-img'/>
                 <h4 className='eduprogram-title'>Little Explores</h4>
                 <p className='eduprogram-para'>
@@ -27,7 +32,7 @@ function EduProgram(){
             </div>
             <div className='eduprograms'>
                 <div className='eduprogram-image'>
-                    <img src='https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h2-edu2.png'
+                    <img src={edu2}
                     className='img-fluid eduprogram-img'/>
                 <h4 className='eduprogram-title'>Creative Learners</h4>
                 <p className='eduprogram-para'>
@@ -37,7 +42,7 @@ function EduProgram(){
             </div>
             <div className='eduprograms'>
                 <div className='eduprogram-image'>
-                    <img src='https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h2-edu3.png'
+                    <img src={edu3}
                     className='img-fluid eduprogram-img'/>
                 <h4 className='eduprogram-title'>Active Adventurers</h4>
                 <p className='eduprogram-para'>
@@ -47,7 +52,7 @@ function EduProgram(){
             </div>
             <div className='eduprograms'>
                 <div className='eduprogram-image'>
-                    <img src='https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h2-edu4.png'
+                    <img src={edu4}
                     className='img-fluid eduprogram-img'/>
                 <h4 className='eduprogram-title'>Imaginative Innovators</h4>
                 <p className='eduprogram-para'>

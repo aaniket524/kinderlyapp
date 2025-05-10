@@ -1,12 +1,18 @@
 import React from "react";
 import './style.css';
+import { motion } from "framer-motion";
+
 
 function About (){
     return(
         <>
         <div className="about-main">
             <div className="about-container">
-                <div className="about-content">
+                <motion.div className="about-content"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeInOut' } }}
+                exit={{ opacity: 0, x: 20, transition: { duration: 0.3 } }}
+                >
                     <h4 className="about-us-subheading">
                     About Us
                     </h4>
@@ -67,21 +73,44 @@ function About (){
                             </div>
                         </div> */}
                     </div>
-                </div>
-                <div className="about-images">
+                </motion.div>
+                <motion.div className="about-images"
+                
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeInOut' } }}
+                exit={{ opacity: 0, x: -20, transition: { duration: 0.3 } }}
+                >
                     <div className="about-image-collage" >
-                    <img src="https://img.freepik.com/premium-vector/real-life-family-moments-vector-illustration-concepts_1253202-60998.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
+                    <motion.img
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.4, delay: 0.1 } }}
+                    whileHover={{ scale: 1.05 }}
+                    src="https://img.freepik.com/free-photo/young-kids-performing-play-theatre-stage-celebrate-world-theatre-day_23-2151163672.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
+                    // "https://img.freepik.com/premium-vector/real-life-family-moments-vector-illustration-concepts_1253202-60998.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
                     className="img-fluid about-image-1"/>
-                       <img src="https://img.freepik.com/premium-photo/female-teacher-leading-kindergarten-classroom-activities-engaging-kindergarten-students-playful_483187-9342.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
+                       <motion.img 
+                       initial={{ opacity: 0, scale: 0.9 }}
+                       whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.4, delay: 0.3 } }}
+                       whileHover={{ scale: 1.05 }}
+                       src="https://img.freepik.com/premium-photo/female-teacher-leading-kindergarten-classroom-activities-engaging-kindergarten-students-playful_483187-9342.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
                     className="img-fluid about-image-4"/>
                     </div>
                     <div className="about-image-collage" >
-                    <img src="https://img.freepik.com/free-photo/international-day-education-celebration_23-2150930970.jpg?t=st=1745739218~exp=1745742818~hmac=20c4bb413f17f4006d651550d9530a9123ca140b379d01be6ed42273594b30ca&w=740"
+                    <motion.img
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.4, delay: 0.3 } }}
+                    whileHover={{ scale: 1.05 }}
+                    src="https://img.freepik.com/free-photo/international-day-education-celebration_23-2150930970.jpg?t=st=1745739218~exp=1745742818~hmac=20c4bb413f17f4006d651550d9530a9123ca140b379d01be6ed42273594b30ca&w=740"
                     className="img-fluid about-image-2"/>
-                     <img src="https://img.freepik.com/free-photo/diverse-kids-reading-books_53876-146406.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
+                     <motion.img 
+                     initial={{ opacity: 0, scale: 0.9 }}
+                     whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.4, delay: 0.3 } }}
+                     whileHover={{ scale: 1.05 }}
+                     src="https://img.freepik.com/free-photo/adorable-little-girl-with-glasses-getting-stressed-out_53876-63179.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
+                    //  "https://img.freepik.com/free-photo/diverse-kids-reading-books_53876-146406.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
                     className="img-fluid about-image-3"/>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
         </>

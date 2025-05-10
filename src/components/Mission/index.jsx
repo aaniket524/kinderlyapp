@@ -1,11 +1,17 @@
 import React from "react";
 import './style.css'
+import { motion } from "framer-motion";
 
 function Mission(){
     return(<>
     <div className="mission-main">
         <div className="missions">
-        <div className="mission">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 30 }}
+          transition={{ duration: 0.5 }}
+        className="mission">
             <h4 className="mission-title">Our Mission
             </h4>
             <p className="mission-para">
@@ -14,8 +20,13 @@ function Mission(){
             We are committed to nurturing each child's emotional, social, and 
             cognitive development through personalized care, creative play, and structured learning.
             </p>
-        </div>
-        <div className="vission">
+        </motion.div>
+        <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -30 }}
+              transition={{ duration: 0.5 }}
+        className="vission">
         <h4 className="mission-title">Our Vission
         </h4>
         <p className="mission-para">
@@ -25,7 +36,7 @@ function Mission(){
 
 
             </p>
-        </div>
+        </motion.div>
         </div>
     </div>
     </>)

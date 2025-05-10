@@ -1,7 +1,14 @@
 import React from "react";
 import './style.css';
+import herobanner from '../../assets/hero-banner.webp'
+import text from '../../assets/text.png'
+import { useNavigate } from "react-router-dom";
 
 function HeroNew(){
+    const navigate = useNavigate()
+    const handleClick=()=>{
+        navigate('/contact-us')
+    }
     return(
         <>
         <div className="heronew-main">
@@ -12,7 +19,7 @@ function HeroNew(){
                     The premier destination for 
                     active 
                   <div >
-                  <img src="https://kidscenter.bzotech.com/wp-content/uploads/2024/11/h4-img-text.png"
+                  <img src={text} rel="preload"
                     className="heronew-text-img img-fluid"/>
                   </div>
                     </h2>
@@ -24,7 +31,7 @@ function HeroNew(){
                    {/* <center> */}
                    <div className="heronew-button" >
                     
-                   <button className="heronew-btn">
+                   <button className="heronew-btn" onClick={handleClick}>
                         Get a Call Back
                     </button>
                    </div>
@@ -34,7 +41,7 @@ function HeroNew(){
                 </div>
                 </div>
                 <div className="heronew-container2">
-                    <img src="https://media.canva.com/v2/files/uri:ifs%3A%2F%2FM%2FRE8dJ0XBx3OM3dwT8-j2gbDUPA2bQvnuPgjMihimHWM.png?csig=AAAAAAAAAAAAAAAAAAAAABeeB-C2-ZmN68UT5BvQzISgEuDUEkiE8nMyCL731Fzs&exp=1746270552&signer=media-rpc&token=AAIAAU0AL1JFOGRKMFhCeDNPTTNkd1Q4LWoyZ2JEVVBBMmJRdm51UGdqTWloaW1IV00ucG5nAAAAAAGWldX_wHo-o9FHz6-LvFW4xInfT4VM-FbgVJnDbIAlXDw03rpd"
+                    <img src={herobanner} rel="preload"
                     // "https://themes.graphtheme.com/kintergarden/static/media/slider.129d1012.svg"
                     // "https://img.freepik.com/premium-vector/two-cute-children-boy-girl-reading-book-tree-books-vector-illustration_491934-587.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
                     // "https://img.freepik.com/free-vector/number-123-with-face-expression-children-characters_1308-97780.jpg?t=st=1745928739~exp=1745932339~hmac=c955ff0b781d81494bc27a1c888554abf231be8d309294b54110e967c04a32ac&w=740"

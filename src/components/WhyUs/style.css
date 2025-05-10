@@ -24,12 +24,12 @@
     /* Flip horizontally */
         opacity: .9;   
     overflow: hidden !important;
-    background:url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/left.png)
+    background:url(../../assets/decos/lefty.png)
      /* url(http://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/shape-2.png) */
     }
 
     .whyus::after{
-        background: url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/section-top-shape.png);
+        background: url(../../assets/section-top-shape.png);
         content: '';
         position: absolute;
         top: 0px;
@@ -57,7 +57,7 @@
     /* Flip horizontally */
         opacity: .9;   
     overflow: hidden !important;
-    background:url(https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/left.png)
+    background:url(../../assets/decos/lefty.png)
      /* url(http://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/shape-2.png) */
     }
 .whyus-conatiner{

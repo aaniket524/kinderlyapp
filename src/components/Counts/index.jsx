@@ -1,5 +1,7 @@
 import React from "react";
 import './style.css'
+import CountUp from 'react-countup';
+
 
 function Counts(){
     return(<>
@@ -8,7 +10,9 @@ function Counts(){
             <div className="aboutcounter">
                 <div className="about-numbers">
                     <h4 className="aboutgrid-number">
-                    10+
+                    <CountUp
+                    end={10}
+                    duration={10}/>+
                     </h4>
                     <p className="aboutgrid-details">
                     Years of Experience
@@ -16,14 +20,18 @@ function Counts(){
                 </div>
                 <div className="about-numbers">
                     <h4 className="aboutgrid-number">
-                    200+
+                    <CountUp
+                    end={200}
+                    duration={10}/>+
                     </h4>
                     <p className="aboutgrid-details">
                     Happy Families</p>
                 </div>
                 <div className="about-numbers">
                     <h4 className="aboutgrid-number">
-                    95%
+                    <CountUp
+                    end={95}
+                    duration={10}/>%
                     </h4>
                     <p className="aboutgrid-details">
                     Parent Satisfaction Rate</p>
@@ -31,7 +39,9 @@ function Counts(){
 
                 <div className="about-numbers">
                     <h4 className="aboutgrid-number">
-                    15
+                    <CountUp
+                    end={15}
+                    duration={10}/>
                     </h4>
                     <p className="aboutgrid-details">
                     Qualified Staff Members</p>

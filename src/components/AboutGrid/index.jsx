@@ -1,16 +1,32 @@
 import React from "react";
 import './style.css'
 import Testimonials from "../Testimonials";
+import team from '../../assets/aboutus/team.webp'
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function AboutGrid(){
+    const navigate = useNavigate()
+    const handleClick=()=>{
+        navigate('/contact-us')
+    }
     return(<>
     <div className="aboutgrid-main">
         <div className="aboutgrid-container1">
             <div className="aboutgrid1">
-                <img src="https://img.freepik.com/free-vector/new-team-members-concept-illustration_114360-31169.jpg"
+                <motion.img 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.4, delay: 0.1 } }}
+                  whileHover={{ scale: 1.05 }}
+                src={team}
                 className="aboutgrid-image img-fluid"/>
             </div>
-            <div className="aboutgrid2">
+            <motion.div 
+            className="aboutgrid2"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeInOut' } }}
+            exit={{ opacity: 0, x: -20, transition: { duration: 0.3 } }}
+                >
                 <div className="aboutgrid-content">
                 <h4 className="aboutgrid-subheading">
                     About Us
@@ -34,11 +50,11 @@ function AboutGrid(){
 
                     </p>
 
-                    <button className="aboutpage-btn">
+                    <button className="aboutpage-btn" onClick= {handleClick}>
                         Contact Us
                     </button>
                 </div>
-            </div>
+            </motion.div>
         </div>
 
         {/* // counter */}

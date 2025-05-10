@@ -35,14 +35,14 @@
 .testimonials-heading::after {
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-image: url('../../assets/decos/yellowheaddeco.webp');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50px; /* adjust size as needed */
-    height: 50px; /* adjust size as needed */
-    margin-left: -10px;
+    width: 40px; /* adjust size as needed */
+    height: 40px; /* adjust size as needed */
+    margin-left: 0px;
     top: -50px;
-    rotate: 120deg;
+    rotate: 10deg;
     vertical-align: top;
   }
 .testimonials-heading{

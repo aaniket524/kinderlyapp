@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css';
-
+import bee from '../../assets/decos/bee.png'
+import { motion } from "framer-motion";
 function Programs(){
     return(<>
 
@@ -13,16 +14,19 @@ function Programs(){
 
         </p>
         <div className='divide'>
-       <img src='https://kidscenter.bzotech.com/wp-content/uploads/2024/10/h2-bg-title.png'
+       <img src={bee}
         className='img-fluid divider-img float-down'/>
        </div>
         <div className="programs">
-            <div className="program-container1">
+            <motion.div 
+             initial={{ opacity: 0, y: 40 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.5, delay: 0.5 }}
+             exit={{ opacity: 0, y: -40 }}
+            className="program-container1"
+            >
                 <div className="program-image">
                 <img src="https://img.freepik.com/free-vector/hand-drawn-parent-helping-child-learn_52683-106213.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&semt=ais_hybrid&w=740"
-                    // "https://img.freepik.com/premium-photo/picture-children-playing-childrens-play-area_854727-53626.jpg?w=740"
-                    // "https://img.freepik.com/free-vector/hand-drawn-vowels-illustration_23-2150140075.jpg?t=st=1746095152~exp=1746098752~hmac=e29dfebe5372585735cf647a07b32450da4b86d38cfa3099d92e2d772598ad99&w=996"
-                    // "https://img.freepik.com/premium-vector/story-time-teacher-reading-group-children_65364-25.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&w=740"
                     className="programs-img img-fluid"/>
 
                 </div>
@@ -45,8 +49,13 @@ function Programs(){
                         <li>Early social interaction through group play and collaborative activities.</li>
                     </ul>
                 </div>
-            </div>
-            <div className="program-container1">
+            </motion.div>
+            <motion.div 
+             initial={{ opacity: 0, y: 40 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.5, delay: 0.5 }}
+             exit={{ opacity: 0, y: -40 }}
+            className="program-container1">
                 <div className="program-image">
                 <img src="https://img.freepik.com/premium-vector/hand-drawn-parent-helping-child-learn_52683-106192.jpg?w=740"
                 //"https://img.freepik.com/premium-vector/using-math-tools-isolated-cartoon-vector-illustration_107173-23202.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&w=740"
@@ -73,9 +82,14 @@ function Programs(){
                         <li>Social and emotional growth through group play and interaction.</li>
                     </ul>
                 </div>
-            </div>
+            </motion.div>
             
-            <div className="program-container1">
+            <motion.div 
+             initial={{ opacity: 0, y: 40 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.5, delay: 0.5 }}
+             exit={{ opacity: 0, y: -40 }}
+            className="program-container1">
                 <div className="program-image">
                     <img src="https://img.freepik.com/free-vector/hand-drawn-parents-helping-children-learn_52683-106207.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&w=740"
                     // "https://img.freepik.com/free-vector/kids-reading-illustration_114360-8533.jpg?uid=R192482509&ga=GA1.1.1471145488.1739683588&w=740"
@@ -102,7 +116,7 @@ function Programs(){
                         <li>Activities that nurture social and emotional growth through peer interaction.</li>
                     </ul>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
     </>)

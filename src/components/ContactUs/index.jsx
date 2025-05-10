@@ -1,14 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.css';
+import contactimg from '../../assets/contacts/contactus.webp'
+import { motion } from "framer-motion";
+import emailjs from 'emailjs-com';
 
 function ContactUs(){
+    const [success, setSuccess] = useState(false);
+    const [formData, setFormData] = useState(
+        {
+            name:"",
+            email:"",
+            phone:"",
+            message:""
+        }
+        
+    )
+    const handleChange=(e)=>{
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+          }));
+       
+        // console.log("change")
+    }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+            alert("Please fill in all fields.");
+            return;
+        }
+    
+        const serviceID = 'service_s8pmzyx';
+        const templateID = 'template_dxibdr6';
+        const publicKey = '1scX8iQdAh7rWk5-D';
+    
+        emailjs.send(serviceID, templateID, {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            message: formData.message,
+        }, publicKey)
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            setFormData({ name: "", email: "", phone: "", message: "" });
+            setSuccess(true);
+            setTimeout(() => setSuccess(false), 3000);
+        }, (err) => {
+            console.log('FAILED...', err);
+            alert("Failed to send message.");
+        });
+        setSuccess(true);
+        setTimeout(() => setSuccess(false), 3000);
+  
+    };
+    
+         
     return(
         <>
        <div className="contactus-core">
        <div className="contactus-main">
        
-       <div className="contactus-find-main">
+       <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        exit={{ opacity: 0, y: -40 }}
+       className="contactus-find-main">
            <div className="contactus-googlemap">
            <iframe
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.2416563717356!2d-80.27979612292467!3d40.690675175720585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834655f95c0d373%3A0x26a58fcc9b839b4b!2s1232%20Washington%20Ave%2C%20Monaca%2C%20PA%2015061%2C%20USA!5e0!3m2!1sen!2sin!4v1746170917356!5m2!1sen!2sin"
@@ -123,8 +182,12 @@ function ContactUs(){
            </div>
           </div>
            </div>
-          </div>
-          <div className="contactus-container">
+          </motion.div>
+          < motion.div 
+           initial={{ opacity: 0, y: 40 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.5, delay: 0.5 }}
+           exit={{ opacity: 0, y: -40 }}className="contactus-container">
           <div className="contactus">
                {/* <h4 className="contactus-subtitle">
                    Contact Us
@@ -135,7 +198,7 @@ function ContactUs(){
                <p className="contactus-para">
                Questions or special inquiries? Fill out a form and we’ll be in touch as soon as possible.
                </p>
-               <img src="https://img.freepik.com/free-vector/pack-flat-people-asking-questions_23-2148917152.jpg?t=st=1746172628~exp=1746176228~hmac=ac718febca1c1408fa75ba09f32e26f98d4997caa2b7292d054e36ccbcd2e988&w=740"
+               <img src={contactimg}
                className="any-question img-fluid"/>
                {/* <div className="contactus-btn">
                    <button className="contactus-button">
@@ -147,25 +210,28 @@ function ContactUs(){
                <h4 className="contact-us-title">
                    Get in Touch
                </h4>
-               <form>
+               <form onSubmit={handleSubmit}>
                    <div className="contactus-form-detail">
-                       <input placeholder="Your Name" type='text'/>
-                   </div>
-                   <div className="contactus-form-detail">
-                       <input placeholder="Your Email" type='email'/>
+                       <input placeholder="Your Name" type='text' name="name" onChange={handleChange} value={formData.name} required/>
                    </div>
                    <div className="contactus-form-detail">
-                       <input placeholder="Phone Number" type='number'/>
+                       <input placeholder="Your Email" type='email' name="email" onChange={handleChange} value={formData.email} required/>
                    </div>
                    <div className="contactus-form-detail">
-                       <textarea placeholder="Your Message" type='text'/>
+                       <input placeholder="Phone Number" type='number' name="phone" onChange={handleChange} value={formData.number} required/>
                    </div>
-                   <div className="contactus-submit">
-                       <button className="submit-btn">Submit</button>
+                   <div className="contactus-form-detail">
+                       <textarea placeholder="Your Message" type='text' name="message" onChange={handleChange} value={formData.message} required/>
                    </div>
+                  
+                   <div className="contactus-submit" >
+                       <button className="submit-btn" type="submit">Submit</button>
+                   </div>
+                   {success && <p className="success-message">Thanks! We'll get in touch soon.</p>}
+
                </form>
            </div>
-          </div>
+          </motion.div>
 
          
 

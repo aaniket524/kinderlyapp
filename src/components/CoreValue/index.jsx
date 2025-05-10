@@ -1,6 +1,20 @@
 import React from "react";
 import './style.css';
+import { motion } from "framer-motion";
 
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.25,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
 function CoreValue(){
     return(<>
     <div className="corevalue-main">
@@ -13,8 +27,15 @@ function CoreValue(){
         <p className="corevalue-para">
         We strive for the highest standards in everything we do.
         </p>
-        <div className="corevalue-cards">
-            <div className="corevalue-card">
+        <motion.div 
+         className="corevalue-cards"
+         variants={containerVariants}
+         initial="hidden"
+         whileInView="show"
+         viewport={{ once: true, amount: 0.2 }}
+      >
+            <motion.div variants={cardVariants}
+            className="corevalue-card">
                 <div className="corevalue-img">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <title>_</title>
@@ -43,8 +64,8 @@ function CoreValue(){
                 <p className="corevalue-desc">
                 We take care of the children entrusted to us and our dedicated staff.
                 </p>
-            </div>
-            <div className="corevalue-card">
+            </motion.div>
+            <motion.div variants={cardVariants} className="corevalue-card">
            <div className='corevalue-img'>
            <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +98,8 @@ function CoreValue(){
                 </h4>
                 <p className="corevalue-desc">
                 We deliver exceptional service and play a key role in supporting families.</p>
-            </div>
-            <div className="corevalue-card">
+            </motion.div>
+            <motion.div variants={cardVariants} className="corevalue-card">
          <div className="corevalue-img">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <title>_</title>
@@ -109,8 +130,8 @@ function CoreValue(){
                 <p className="corevalue-desc">
                 Offering exceptional early years education with top-notch care.
                 </p>
-            </div>
-            <div className="corevalue-card">
+            </motion.div>
+            <motion.div variants={cardVariants} className="corevalue-card">
            <div className="corevalue-img">
            <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -143,8 +164,8 @@ function CoreValue(){
                 </h4>
                 <p className="corevalue-desc">
                 We provide outstanding and unique  value to our customers and their family.</p>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     </div>
     </>)
 }

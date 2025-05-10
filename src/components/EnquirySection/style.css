@@ -83,7 +83,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
   /* Decorative Image: After Heading */
   .enquiy-heading::after {
     content: "";
-    background-image: url("https://media-public.canva.com/6UnBw/MAFyU96UnBw/1/t.png");
+    background-image: url("../../assets/decos/hearts.webp");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -97,7 +97,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
   /* Decorative Heart BG */
   .enquirysection-container::before {
     content: "";
-    background-image: url("https://media-public.canva.com/IHF-g/MAE8XJIHF-g/1/t.png");
+    background-image: url("../../assets//decos/hearttypes.webp");
     background-repeat: no-repeat;
     background-size: 80px;
     position: absolute;
@@ -110,7 +110,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
   
   .enquirysection-container::after {
     content: "";
-    background-image: url("https://media-public.canva.com/Qliy4/MAFvb7Qliy4/1/t.png");
+    background-image: url("../../assets/decos/aero.webp");
     background-repeat: no-repeat;
     background-size: 60px;
     position: absolute;
@@ -183,7 +183,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
   }
   .enquirysection-container::after {
     content: "";
-    background-image: url("https://media-public.canva.com/Qliy4/MAFvb7Qliy4/1/t.png");
+    background-image: url("../../assets/decos/aero.webp");
     background-repeat: no-repeat;
     background-size: 50px;
     position: absolute;
@@ -232,7 +232,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
       
       .enquirysection-container::before {
         content: "";
-        background-image: url("https://media-public.canva.com/IHF-g/MAE8XJIHF-g/1/t.png");
+        background-image: url("../../assets//decos/hearttypes.webp");
         background-repeat: no-repeat;
         background-size: 80px;
         position: absolute;
@@ -245,7 +245,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
       
       .enquirysection-container::after {
         content: "";
-        background-image: url("https://media-public.canva.com/Qliy4/MAFvb7Qliy4/1/t.png");
+        background-image: url("../../assets/decos/aero.webp");
         background-repeat: no-repeat;
         background-size: 50px;
         position: absolute;
@@ -259,7 +259,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
       
       .enquiy-heading::after {
         content: "";
-        background-image: url("https://media-public.canva.com/6UnBw/MAFyU96UnBw/1/t.png");
+        background-image: url("../../assets/decos/hearts.webp");
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
@@ -306,7 +306,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
       }
       .enquirysection-container::before {
         content: "";
-        background-image: url("https://media-public.canva.com/IHF-g/MAE8XJIHF-g/1/t.png");
+        background-image: url("../../assets//decos/hearttypes.webp");
         background-repeat: no-repeat;
         background-size: 80px;
         position: absolute;
@@ -319,7 +319,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
       
       .enquirysection-container::after {
         content: "";
-        background-image: url("https://media-public.canva.com/Qliy4/MAFvb7Qliy4/1/t.png");
+        background-image: url("../../assets/decos/aero.webp");
         background-repeat: no-repeat;
         background-size: 50px;
         position: absolute;
@@ -333,7 +333,7 @@ box-shadow: 0 12px 30px rgba(255, 111, 145, 0.4), 0 8px 18px rgba(144, 224, 239,
       
       .enquiy-heading::after {
         content: "";
-        background-image: url("https://media-public.canva.com/6UnBw/MAFyU96UnBw/1/t.png");
+        background-image: url("../../assets/decos/hearts.webp");
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;

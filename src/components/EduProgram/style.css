@@ -16,7 +16,7 @@
 .eduprogram-heading::after {
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/ZR01Q/MAGPqgZR01Q/1/t.png');
+    background-image: url('../../assets/decos/yellowheaddeco.webp');
     background-size: contain;
     background-repeat: no-repeat;
     width: 40px; /* adjust size as needed */

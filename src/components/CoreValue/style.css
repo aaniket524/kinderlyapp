@@ -26,7 +26,7 @@
 .corevalue-heading::after {
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-image: url('../../assets/decos/headerdeco-pink.webp');
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px; /* adjust size as needed */
@@ -57,8 +57,18 @@
 .corevalue-card{
     height: 290px;
     padding: 30px 30px;
+    /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
     width: 23%;
     border-radius: 20px;
+ 
+
+}
+.corevalue-card:hover{
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1),
+                0 6px 10px rgba(0, 0, 0, 0.06);
 }
 .corevalue-cards > .corevalue-card:nth-child(1) {
     background-color: #B5BABE;
@@ -87,7 +97,7 @@
 }
 .corevalue-title{
     font-family: "Fredoka", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     /* text-transform: capitalize; */
     text-align: center;
     margin-bottom: 0px;

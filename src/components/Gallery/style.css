@@ -12,7 +12,7 @@ justify-self: center
   right:120px;
   width: 100px;  /* set width explicitly */
   height: 40px; /* set height explicitly */
-  background: url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/dot.png') no-repeat center center;
+  background: url('../../assets/decos/dot.png') no-repeat center center;
   background-size: contain;
   z-index: -1;     /* adjust based on other content */
   opacity: 0.9;
@@ -27,7 +27,7 @@ justify-self: center
   right: 150px;
   width: 200px;  /* set width explicitly */
   height: 150px; /* set height explicitly */
-  background: url('https://gramentheme.com/wp/kidsa/wp-content/uploads/2024/05/mask-2.png') no-repeat center center;
+  background: url('../../assets/decos/dottedmask.png') no-repeat center center;
   background-size: contain;
   z-index: 1;     /* adjust based on other content */
   opacity: 0.9;
@@ -48,7 +48,7 @@ justify-self: center
 .gallery-title::after {
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/ZR01Q/MAGPqgZR01Q/1/t.png');
+    background-image: url('../../assets/decos/yellowheaddeco.webp');
     background-size: contain;
     background-repeat: no-repeat;
     width: 40px; /* adjust size as needed */

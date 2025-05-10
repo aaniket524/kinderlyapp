@@ -38,19 +38,20 @@
 .ourclasses-heading::after {
     content: '';
     display: inline-block;
-    background-image: url('https://media-public.canva.com/XeU9Q/MAFJ6jXeU9Q/1/t.png');
+    background-image: url('../../assets/decos/yellowheaddeco.webp');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50px; /* adjust size as needed */
-    height: 50px; /* adjust size as needed */
-    margin-left: -10px;
+    width: 40px; /* adjust size as needed */
+    height: 40px; /* adjust size as needed */
+    margin-left: 0px;
     top: -50px;
-    rotate: 120deg;
+    rotate: 20deg;
     vertical-align: top;
   }
 
   .ourclasses{
     margin-top: 50px;
+    
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
@@ -67,7 +68,15 @@
     padding: 30px;
     height: 400px;
     border-radius: 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease-in-out;
+
   }
+  .ourclasses-card:hover{
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1),
+                0 6px 10px rgba(0, 0, 0, 0.06);
+}
   .ourclasses > .ourclasses-card:nth-child(1){
     background-color: #FA9DB7;
   }
